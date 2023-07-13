@@ -5,8 +5,11 @@ library(dplyr)
 library(ggplot2)
 library(shinythemes)
 
+# Set the working directory
+# setwd("C:/Users/adars/OneDrive/Escritorio/ProjecteLolShiny/Data")
+
 # Read data
-data <- read_csv("PlayerStatesTrajectory.csv")
+data_lec <- read_csv("PlayerStatesTrajectory.csv")
 
 # UI function
 ui <- fluidPage(
@@ -39,7 +42,7 @@ ui <- fluidPage(
   titlePanel("League of Legends Player Stats"),
   sidebarLayout(
     sidebarPanel(
-      selectInput("player", "Select Player:", choices = unique(data$Player),
+      selectInput("player", "Select Player:", choices = unique(data_lec$Player),
                   width = "100%")  # Set the width of the dropdown to 100%
     ),
     mainPanel(
@@ -55,7 +58,7 @@ ui <- fluidPage(
 server <- function(input, output) {
   # Filter data based on selected player
   selected_player <- reactive({
-    filter(data, Player == input$player) %>% slice(1)
+    filter(data_lec, Player == input$player) %>% slice(1)
   })
   
   # Display player's name
