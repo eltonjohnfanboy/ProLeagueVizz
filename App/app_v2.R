@@ -36,8 +36,8 @@ ui <- fluidPage(theme = shinytheme("superhero"),
                           )
                   ),
                   tabPanel("Team stats", "Under construction 👷"),
-                  tabPanel("Team comparison", "Under construction 👷")
-              
+                  tabPanel("Team comparison", "Under construction 👷"),
+                  tabPanel("Player similarity", "Under construction 👷")
                 ) # navbar page
               ) #fluidpage
 
