@@ -15,7 +15,7 @@ setwd("C:/Users/adars/OneDrive/Escritorio/ProjecteLolShiny/Data")
 
 
 # Read data
-data_lec <- read_csv("PlayerStatesTrajectory.csv")
+data_lec <- read_csv("PlayerStats.csv")
 data_traj <- read_csv("PlayersTrajectoyData.csv")
 
 # Define ui
@@ -26,11 +26,12 @@ ui <- fluidPage(
                   "LeagueStats",
                   tabPanel("Player stats",
                            sidebarPanel(
-                             tags$h3("Search Bar"),
-                             selectInput("player", "Select Player:", choices = unique(data_lec$Player),
-                                         width = "100%"),
-                             uiOutput("yearSelection")
-                           ),
+                                  tags$h3("Search Bar"),
+                                  selectInput("player", "Select Player:", choices = unique(data_lec$Player),
+                                              width = "100%"),
+                                  uiOutput("yearSelection"),
+                                  uiOutput("eventSelection")
+                            ),
                   mainPanel(
                         uiOutput("player_info_box")
                           ),
@@ -44,6 +45,12 @@ ui <- fluidPage(
                 ) # navbar page
               ) #fluidpage
 
+
+
+
+
+
+
 server <- function(input, output, session){
   
   selected_player <- reactive({
@@ -53,8 +60,15 @@ server <- function(input, output, session){
   output$yearSelection <- renderUI({selectInput("year", "Select Year:", choices = unique(selected_player()$Year),
                                                 width = "100%")})
   
-  selected_data <- reactive({
+selected_player_year <- reactive({
     filter(data_lec, Player == input$player & Year == input$year) 
+  })
+
+  output$eventSelection <- renderUI({selectInput("event", "Select event:", choices = unique(selected_player_year()$Event),
+                                                width = "100%")})
+  
+  selected_data <- reactive({
+    filter(data_lec, Player == input$player & Year == input$year & Event == input$event) 
   })
   
   # Display player's name
@@ -94,10 +108,10 @@ server <- function(input, output, session){
     info_boxes <- lapply(seq_len(nrow(selected_player)), function(i) {
       div(
         class = "info-box",
-        h3(paste("Player:", input$player)),
+        h3(paste("Player:", selected_player$"Player original name")),
         p(paste("Team:", selected_player$Team[i])),
-        p(paste("Position:", selected_player$Team[i])),
-        p(paste("Goals:", selected_player$KDA[i]))
+        p(paste("Position:", selected_player$Position[i])),
+        p(paste("KDA:", selected_player$KDA[i]))
       )
     })
     
