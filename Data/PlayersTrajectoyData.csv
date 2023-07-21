@@ -1,10 +1,88 @@
 Player,Teams trajectory,Dates,start_date,end_date
+113,SUP Academy,"('Jan 2020', 'May 2021')",2020-01-01,2021-05-01
+113,Vodafone Giants,"('May 2021', 'Nov 2021')",2021-05-01,2021-11-01
+113,Karmine Corp,"('Nov 2021', 'Nov 2022')",2021-11-01,2022-11-01
+113,Astralis,"('Dec 2022', 'present')",2022-12-01,2023-07-21
 Elyoya,iNAT Gaming,"('Dec 2018', '≈Mar 2019')",2018-12-01,2019-03-01
 Elyoya,GGaming,"('Mar 2019', '≈Jun 2019')",2019-03-01,2019-06-01
 Elyoya,Movistar Academy,"('Jul 2019', 'Oct 2019')",2019-07-01,2019-10-01
 Elyoya,Movistar Riders,"('Oct 2019', 'Nov 2020')",2019-10-01,2020-11-01
-Elyoya,MAD Lions,"('Nov 2020', 'present')",2020-11-01,2023-07-13
-113,SUP Academy,"('Jan 2020', 'May 2021')",2020-01-01,2021-05-01
-113,Vodafone Giants,"('May 2021', 'Nov 2021')",2021-05-01,2021-11-01
-113,Karmine Corp,"('Nov 2021', 'Nov 2022')",2021-11-01,2022-11-01
-113,Astralis,"('Dec 2022', 'present')",2022-12-01,2023-07-13
+Elyoya,MAD Lions,"('Nov 2020', 'present')",2020-11-01,2023-07-21
+Caps,Enigma Esports,"('≈Jan 2015', '≈Dec 2015')",2015-01-01,2015-12-01
+Caps,Inspire eSports,"('Jan 2016', 'Jun 2016')",2016-01-01,2016-06-01
+Caps,E-corp Gaming,"('Feb 2016', 'Mar 2016')",2016-02-01,2016-03-01
+Caps,mousesports,"('≈Apr 2016', '≈May 2016')",2016-04-01,2016-05-01
+Caps,Nerv,"('Jun 2016', 'Jul 2016')",2016-06-01,2016-07-01
+Caps,Dark Passage,"('Jul 2016', 'Oct 2016')",2016-07-01,2016-10-01
+Caps,Fnatic,"('Dec 2016', 'Nov 2018')",2016-12-01,2018-11-01
+Caps,G2 Esports,"('Nov 2018', 'Jan 2020')",2018-11-01,2020-01-01
+Caps,G2 Esports,"('Jan 2020', 'May 2020')",2020-01-01,2020-05-01
+Caps,G2 Esports,"('May 2020', 'present')",2020-05-01,2023-07-21
+Razork,Dimegio Club,"('Aug 2016', 'Oct 2016')",2016-08-01,2016-10-01
+Razork,Team Heretics,"('Jan 2017', 'Jun 2017')",2017-01-01,2017-06-01
+Razork,eMonkeyz Storm,"('Jul 2017', 'Jul 2017')",2017-07-01,2017-07-01
+Razork,The G-Lab Penguins,"('Aug 2017', 'Jan 2018')",2017-08-01,2018-01-01
+Razork,Penguins,"('Jan 2018', 'Jan 2018')",2018-01-01,2018-01-01
+Razork,Giants Gaming Spain,"('Jan 2018', 'Apr 2018')",2018-01-01,2018-04-01
+Razork,Vodafone Giants,"('Apr 2018', 'Dec 2019')",2018-04-01,2019-12-01
+Razork,Giants Gaming,"('Jun 2018', 'Nov 2018')",2018-06-01,2018-11-01
+Razork,Misfits Gaming,"('Dec 2019', 'Nov 2021')",2019-12-01,2021-11-01
+Razork,Fnatic,"('Dec 2021', 'present')",2021-12-01,2023-07-21
+Yike,Vortex Five,"('Apr 2019', '≈Jul 2019')",2019-04-01,2019-07-01
+Yike,Hybrid Esports,"('May 2019', 'May 2020')",2019-05-01,2020-05-01
+Yike,Bulldog Esports,"('Sep 2019', 'Dec 2019')",2019-09-01,2019-12-01
+Yike,UniQ Esports Club,"('May 2020', 'Aug 2020')",2020-05-01,2020-08-01
+Yike,Domino esports,"('Aug 2020', 'Jan 2021')",2020-08-01,2021-01-01
+Yike,Rich Gang,"('Dec 2020', 'Dec 2020')",2020-12-01,2020-12-01
+Yike,Morning Stars,"('Jan 2021', 'Mar 2021')",2021-01-01,2021-03-01
+Yike,Team Oplon,"('Jun 2021', 'Dec 2021')",2021-06-01,2021-12-01
+Yike,LDLC OL,"('Dec 2021', 'Nov 2022')",2021-12-01,2022-11-01
+Yike,G2 Esports,"('Dec 2022', 'present')",2022-12-01,2023-07-21
+Exakick,Dawns Esport,"('Dec 2018', 'Jan 2019')",2018-12-01,2019-01-01
+Exakick,Warthox,"('Jan 2019', '≈Feb 2019')",2019-01-01,2019-02-01
+Exakick,Fragbox Gaming,"('May 2019', '≈Jun 2019')",2019-05-01,2019-06-01
+Exakick,Omerix,"('Feb 2020', '≈Mar 2020')",2020-02-01,2020-03-01
+Exakick,Lunary,"('Mar 2020', 'Apr 2020')",2020-03-01,2020-04-01
+Exakick,ahg Gentlemen's Club,"('Apr 2020', 'May 2020')",2020-04-01,2020-05-01
+Exakick,LDLC OL,"('Jul 2020', 'Nov 2022')",2020-07-01,2022-11-01
+Exakick,SK Gaming,"('Dec 2022', 'present')",2022-12-01,2023-07-21
+Upset,Mysterious Monkeys,"('Feb 2016', 'Mar 2016')",2016-02-01,2016-03-01
+Upset,mousesports,"('≈Apr 2016', '≈May 2016')",2016-04-01,2016-05-01
+Upset,Nerv,"('Jun 2016', 'Dec 2016')",2016-06-01,2016-12-01
+Upset,Melty eSport Club,"('Jul 2016', 'Jul 2016')",2016-07-01,2016-07-01
+Upset,Giants Gaming,"('Dec 2016', 'Dec 2016')",2016-12-01,2016-12-01
+Upset,Schalke 04,"('Jan 2017', 'Nov 2019')",2017-01-01,2019-11-01
+Upset,G2 Esports,"('May 2017', 'May 2017')",2017-05-01,2017-05-01
+Upset,Origen,"('Nov 2019', 'Sep 2020')",2019-11-01,2020-09-01
+Upset,Astralis,"('Sep 2020', 'Nov 2020')",2020-09-01,2020-11-01
+Upset,Fnatic,"('Nov 2020', 'Dec 2022')",2020-11-01,2022-12-01
+Upset,Fnatic,"('Dec 2022', 'Mar 2023')",2022-12-01,2023-03-01
+Upset,Team Vitality,"('Mar 2023', 'present')",2023-03-01,2023-07-21
+Humanoid,Dark Tigers,"('Oct 2015', 'Feb 2016')",2015-10-01,2016-02-01
+Humanoid,eSuba,"('Apr 2016', 'Jun 2016')",2016-04-01,2016-06-01
+Humanoid,Fraternitas,"('Jun 2016', '≈Dec 2016')",2016-06-01,2016-12-01
+Humanoid,eSuba,"('May 2017', 'May 2018')",2017-05-01,2018-05-01
+Humanoid,MAD Lions,"('Sep 2017', 'Oct 2017')",2017-09-01,2017-10-01
+Humanoid,MAD Lions,"('Oct 2017', 'Jan 2018')",2017-10-01,2018-01-01
+Humanoid,Millenium,"('May 2018', 'Jun 2018')",2018-05-01,2018-06-01
+Humanoid,Dark Passage,"('Jul 2018', 'Sep 2018')",2018-07-01,2018-09-01
+Humanoid,Illuminar Gaming,"('Sep 2018', 'Nov 2018')",2018-09-01,2018-11-01
+Humanoid,Splyce,"('Nov 2018', 'Nov 2019')",2018-11-01,2019-11-01
+Humanoid,MAD Lions,"('Nov 2019', 'Dec 2021')",2019-11-01,2021-12-01
+Humanoid,Fnatic,"('Jan 2022', 'present')",2022-01-01,2023-07-21
+Hylissang,Unicorns of Love,"('≈Jan 2014', 'Dec 2017')",2014-01-01,2017-12-01
+Hylissang,Fnatic,"('Dec 2017', 'Nov 2022')",2017-12-01,2022-11-01
+Hylissang,MAD Lions,"('Nov 2022', 'present')",2022-11-01,2023-07-21
+Nisqy,PunchLine Esport Club,"('Jan 2015', 'Jun 2015')",2015-01-01,2015-06-01
+Nisqy,InFamouS Esport,"('Jun 2015', 'Mar 2016')",2015-06-01,2016-03-01
+Nisqy,E-corp Gaming,"('Mar 2016', '≈Apr 2016')",2016-03-01,2016-04-01
+Nisqy,Melty eSport Club,"('May 2016', 'Oct 2016')",2016-05-01,2016-10-01
+Nisqy,Team Orora,"('Aug 2016', 'Aug 2016')",2016-08-01,2016-08-01
+Nisqy,Team-LDLC,"('Nov 2016', 'Nov 2016')",2016-11-01,2016-11-01
+Nisqy,Fnatic Academy,"('Nov 2016', 'May 2017')",2016-11-01,2017-05-01
+Nisqy,Team EnVyUs,"('May 2017', 'Nov 2017')",2017-05-01,2017-11-01
+Nisqy,Splyce,"('Nov 2017', 'Nov 2018')",2017-11-01,2018-11-01
+Nisqy,Cloud9,"('Nov 2018', 'Nov 2020')",2018-11-01,2020-11-01
+Nisqy,Fnatic,"('Nov 2020', 'Dec 2021')",2020-11-01,2021-12-01
+Nisqy,Fnatic,"('Dec 2021', 'May 2022')",2021-12-01,2022-05-01
+Nisqy,MAD Lions,"('May 2022', 'present')",2022-05-01,2023-07-21
