@@ -19,3 +19,61 @@
     margin: 5px 0;
   }
   
+  .early-game-container {
+    background-color: black;    /* Set the background color to a light gray */
+    border: 1px solid #999999;    /* Add a subtle border around the section */
+    border-radius: 10px;          /* Set border radius for slightly rounded corners */
+    padding: 15px;                /* Add padding to create space between content and border */
+    box-shadow: 2px 2px 5px #888888;  /* Add a subtle box-shadow for an elegant effect */
+    position: relative;
+  }
+
+  .first-blood-container {
+    background-color: rgba(43, 40, 40, 0.7);  /* Set the background to a light black */
+    padding: 10px;  /* Add padding inside the div */
+    border-radius: 8px;  /* Set border radius for rounded corners */
+    margin-top: 10px; /* Add a subtle box-shadow for an elegant effect */
+    max-width: 300px;
+  }
+
+  .early-radioButtons-container {
+    background-color: rgba(43, 40, 40, 0.7);  /* Set the background to a light black */
+    padding: 10px;  /* Add padding inside the div */
+    border-radius: 8px;  /* Set border radius for rounded corners */
+    margin-top: 10px; /* Add a subtle box-shadow for an elegant effect */
+    margin-right: 10px;
+    max-width: 150px;
+    position: absolute;
+    top:0px;
+    right:5px;
+  }
+
+  .agression-container {
+    background-color: black;    /* Set the background color to a light gray */
+    border: 1px solid #999999;    /* Add a subtle border around the section */
+    border-radius: 10px;          /* Set border radius for slightly rounded corners */
+    padding: 15px;                /* Add padding to create space between content and border */
+    box-shadow: 2px 2px 5px #888888;  /* Add a subtle box-shadow for an elegant effect */
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .aggr-data-container {
+    background-color: rgba(43, 40, 40, 0.7);  /* Set the background to a light black */
+    padding: 10px;  /* Add padding inside the div */
+    border-radius: 8px;  /* Set border radius for rounded corners */
+    margin-top: 10px; /* Add a subtle box-shadow for an elegant effect */
+    max-width: 200px;
+  }
+
+  .aggr-radioButtons-container {
+    background-color: rgba(43, 40, 40, 0.7);  /* Set the background to a light black */
+    padding: 10px;  /* Add padding inside the div */
+    border-radius: 8px;  /* Set border radius for rounded corners */
+    margin-top: 10px; /* Add a subtle box-shadow for an elegant effect */
+    margin-right: 10px;
+    max-width: 150px;
+    position: absolute;
+    top:0px;
+    right:5px;
+  }

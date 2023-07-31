@@ -1,0 +1,322 @@
+Player,Event,AheadCS@15%,CSD@15,GD@15,XPD@15,FB_Participation%,FB_Victim%,DPM,DMG%,KA_PM,SoloKills,Pentakills,VSPM,WPM,VWPM,WCPM,matched_event,Position
+113,ALL,22.0,-5.4,-155.0,-467.0,33.0,0.0,302.1,16.0,0.24,1,0.0,1.15,0.28,0.28,0.23,,Jungle
+113,LEC Summer 2023,22.0,-5.4,-155.0,-467.0,33.0,0.0,302.1,16.0,0.24,1,0.0,1.15,0.28,0.28,0.23,LEC 2023 Summer Season,Jungle
+113,LEC Spring Groups 2023,0.0,-23.0,-1010.0,-953.0,43.0,43.0,336.9,15.0,0.3,0,0.0,1.11,0.24,0.23,0.21,LEC 2023 Spring Groups,Jungle
+113,LEC Spring Season 2023,11.0,-16.4,-139.0,-495.0,44.0,11.0,339.0,16.0,0.37,0,0.0,1.64,0.5,0.35,0.28,LEC 2023 Spring Season,Jungle
+113,LEC Winter Groups 2023,25.0,-8.9,-248.0,-151.0,13.0,25.0,280.4,13.0,0.3,1,0.0,1.6,0.22,0.24,0.45,LEC 2023 Winter Groups,Jungle
+113,LEC Winter 2023,22.0,-11.4,-176.0,-429.0,67.0,11.0,263.2,13.0,0.25,2,0.0,1.33,0.27,0.28,0.32,LEC 2023 Winter Groups,Jungle
+113,LFL Summer Playoffs 2022,25.0,-11.8,-799.0,-794.0,0.0,25.0,285.6,13.0,0.21,0,0.0,1.69,0.25,0.25,0.52,LFL 2022 Summer Playoffs,Jungle
+113,LFL Summer 2022,33.0,-7.3,-116.0,-172.0,22.0,17.0,288.0,12.0,0.26,2,0.0,1.21,0.32,0.29,0.3,LFL 2022 Summer,Jungle
+113,EM Spring 2022,25.0,-9.5,227.0,-282.0,60.0,5.0,296.3,13.0,0.44,3,0.0,1.33,0.34,0.3,0.37,EM 2022 Spring Main Event,Jungle
+113,EM Spring Play-In 2022,13.0,-13.8,-152.0,-806.0,50.0,13.0,373.8,15.0,0.48,3,0.0,1.16,0.42,0.26,0.23,EM 2022 Spring Play-In,Jungle
+113,LFL Spring Playoffs 2022,57.0,0.3,-291.0,-138.0,29.0,14.0,264.9,14.0,0.21,0,0.0,1.17,0.33,0.3,0.25,LFL 2022 Spring Playoffs,Jungle
+113,LFL Spring 2022,39.0,-3.0,48.0,-272.0,44.0,17.0,296.6,15.0,0.3,1,0.0,1.25,0.39,0.28,0.27,LFL 2022 Spring,Jungle
+113,EM Summer 2021,30.0,-4.9,-705.0,-414.0,40.0,0.0,429.8,20.0,0.31,1,0.0,1.24,0.37,0.36,0.26,EM 2021 Summer Main Event,Jungle
+113,LVP Summer Playoffs 2021,46.0,-5.9,287.0,-132.0,62.0,8.0,429.1,21.0,0.38,2,0.0,1.15,0.36,0.29,0.25,LVP SL 2021 Summer Playoffs,Jungle
+113,LVP SL Summer 2021,17.0,-8.7,-251.0,-461.0,44.0,11.0,360.7,17.0,0.23,2,0.0,1.41,0.52,0.37,0.32,LVP SL 2021 Summer,Jungle
+Elyoya,ALL,69.0,5.8,-292.0,145.0,15.0,15.0,277.3,12.0,0.24,2,0.0,1.66,0.45,0.33,0.38,,Jungle
+Elyoya,LEC Summer Groups 2023,50.0,5.5,-476.0,76.0,25.0,0.0,163.2,8.0,0.17,0,0.0,1.7,0.53,0.32,0.39,LEC 2023 Summer Groups,Jungle
+Elyoya,LEC Summer 2023,78.0,5.9,-210.0,176.0,11.0,22.0,327.9,14.0,0.27,2,0.0,1.65,0.41,0.33,0.37,LEC 2023 Summer Season,Jungle
+Elyoya,MSI 2023,17.0,-4.2,-73.0,-162.0,83.0,0.0,304.5,16.0,0.29,2,0.0,1.3,0.48,0.22,0.22,MSI 2023,Jungle
+Elyoya,LEC Spring Playoffs 2023,36.0,-2.4,404.0,99.0,36.0,0.0,279.1,13.0,0.38,1,0.0,1.53,0.36,0.31,0.4,LEC 2023 Spring Playoffs,Jungle
+Elyoya,LEC Spring Groups 2023,57.0,0.4,-134.0,-37.0,29.0,14.0,284.2,12.0,0.44,1,0.0,1.55,0.3,0.32,0.42,LEC 2023 Spring Groups,Jungle
+Elyoya,LEC Spring Season 2023,60.0,0.6,-59.0,-26.0,30.0,10.0,326.6,13.0,0.3,1,0.0,1.58,0.44,0.33,0.37,LEC 2023 Spring Season,Jungle
+Elyoya,LEC Winter Playoffs 2023,83.0,9.2,247.0,225.0,33.0,17.0,375.2,15.0,0.33,4,0.0,1.57,0.31,0.27,0.43,LEC 2023 Winter Playoffs,Jungle
+Elyoya,LEC Winter Groups 2023,57.0,2.9,213.0,-59.0,43.0,0.0,405.1,16.0,0.4,0,0.0,1.72,0.45,0.31,0.43,LEC 2023 Winter Groups,Jungle
+Elyoya,LEC Winter 2023,56.0,0.7,140.0,-48.0,33.0,0.0,276.4,12.0,0.34,0,0.0,2.07,0.59,0.31,0.5,LEC 2023 Winter Groups,Jungle
+Elyoya,World Championship Play-In 2022,83.0,9.9,401.0,297.0,67.0,17.0,300.1,15.0,0.33,2,0.0,1.66,0.32,0.31,0.57,Worlds 2022 Play-In,Jungle
+Elyoya,LEC Summer Playoffs 2022,78.0,10.2,346.0,149.0,33.0,0.0,280.8,14.0,0.24,0,0.0,1.45,0.34,0.34,0.48,LEC 2022 Summer Playoffs,Jungle
+Elyoya,LEC Summer 2022,83.0,8.3,277.0,252.0,44.0,6.0,288.0,14.0,0.32,0,0.0,1.56,0.41,0.4,0.5,LEC 2022 Summer,Jungle
+Elyoya,LEC Spring 2022,78.0,10.6,412.0,399.0,56.0,0.0,322.9,18.0,0.31,1,0.0,1.55,0.38,0.37,0.46,LEC 2022 Spring,Jungle
+Elyoya,Worlds 2021,55.0,2.2,-106.0,40.0,9.0,0.0,258.2,14.0,0.28,1,0.0,1.51,0.39,0.36,0.45,Worlds 2021 Main Event,Jungle
+Elyoya,LEC Summer Playoffs 2021,27.0,-6.1,-156.0,-186.0,55.0,9.0,363.9,16.0,0.43,1,0.0,1.29,0.45,0.4,0.36,LEC 2021 Summer Playoffs,Jungle
+Elyoya,LEC Summer 2021,67.0,3.9,-82.0,-17.0,22.0,6.0,347.7,16.0,0.34,3,0.0,1.36,0.38,0.32,0.34,LEC 2021 Summer,Jungle
+Elyoya,MSI 2021,62.0,-0.6,11.0,-92.0,33.0,14.0,294.6,14.0,0.33,3,0.0,1.48,0.49,0.32,0.38,MSI 2021,Jungle
+Elyoya,LEC Spring Playoffs 2021,54.0,3.5,-68.0,-24.0,46.0,15.0,284.9,14.0,0.38,0,0.0,1.51,0.45,0.36,0.44,LEC 2021 Spring Playoffs,Jungle
+Elyoya,LEC Spring 2021,67.0,6.2,333.0,245.0,39.0,0.0,373.2,19.0,0.34,2,0.0,1.4,0.43,0.33,0.35,LEC 2021 Spring,Jungle
+Elyoya,Iberian Cup 2020,100.0,27.8,679.0,1433.0,25.0,0.0,488.1,22.0,0.33,1,0.0,2.15,0.54,0.21,0.66,Coupe de France 2022,Jungle
+Elyoya,LVP SLO Summer Playoffs 2020,83.0,7.5,833.0,810.0,67.0,0.0,421.4,18.0,0.54,2,0.0,1.65,0.37,0.35,0.48,LVP SLO 2020 Summer Playoffs,Jungle
+Elyoya,EM Summer 2020,43.0,-1.7,-273.0,-137.0,57.0,14.0,424.8,19.0,0.34,0,0.0,1.39,0.39,0.31,0.36,EM 2020 Summer Main Event,Jungle
+Elyoya,LVP SLO Summer 2020,77.0,23.4,857.0,1014.0,78.0,6.0,367.3,18.0,0.44,4,0.0,1.68,0.34,0.31,0.5,LVP SLO 2020 Summer,Jungle
+Elyoya,EM Spring 2020,77.0,11.7,311.0,448.0,31.0,8.0,295.6,15.0,0.3,0,0.0,1.47,0.24,0.26,0.44,EM 2020 Spring Main Event,Jungle
+Elyoya,LVP SLO Spring 2020,62.0,3.5,341.0,272.0,45.0,7.0,311.3,15.0,0.29,8,0.0,1.92,0.65,0.32,0.49,LVP SLO 2020 Spring,Jungle
+Caps,ALL,72.0,7.6,421.0,318.0,22.0,11.0,626.6,25.0,0.38,3,1.0,0.98,0.27,0.06,0.26,,Middle
+Caps,LEC Summer Playoffs 2023,60.0,1.6,-33.0,120.0,40.0,0.0,693.5,26.0,0.45,1,0.0,0.98,0.25,0.08,0.23,LEC 2022 Summer Playoffs,Middle
+Caps,LEC Summer Groups 2023,50.0,-1.0,310.0,12.0,0.0,25.0,798.8,31.0,0.46,0,1.0,0.95,0.21,0.07,0.21,LEC 2023 Summer Groups,Middle
+Caps,LEC Summer 2023,89.0,14.8,723.0,564.0,22.0,11.0,512.9,22.0,0.3,2,0.0,0.98,0.3,0.03,0.3,LEC 2023 Summer Season,Middle
+Caps,MSI 2023,27.0,-5.7,-476.0,-264.0,13.0,27.0,452.2,21.0,0.37,3,0.0,0.84,0.25,0.04,0.15,MSI 2023,Middle
+Caps,LEC Spring Playoffs 2023,60.0,4.6,90.0,-9.0,20.0,20.0,479.4,23.0,0.25,2,0.0,1.05,0.3,0.06,0.26,LEC 2023 Spring Playoffs,Middle
+Caps,LEC Spring Groups 2023,63.0,0.9,-91.0,0.0,0.0,13.0,415.6,19.0,0.27,1,0.0,1.39,0.28,0.1,0.28,LEC 2023 Spring Groups,Middle
+Caps,LEC Spring Season 2023,56.0,-2.4,152.0,93.0,11.0,11.0,655.9,25.0,0.39,8,0.0,0.98,0.31,0.09,0.18,LEC 2023 Spring Season,Middle
+Caps,LEC Winter Playoffs 2023,14.0,-12.3,354.0,-185.0,14.0,29.0,501.8,21.0,0.38,6,0.0,1.34,0.29,0.09,0.32,LEC 2023 Winter Playoffs,Middle
+Caps,LEC Winter Groups 2023,20.0,-10.2,-88.0,27.0,40.0,20.0,657.6,24.0,0.49,2,0.0,0.97,0.26,0.09,0.23,LEC 2023 Winter Groups,Middle
+Caps,LEC Winter 2023,33.0,-5.0,276.0,134.0,11.0,11.0,494.4,21.0,0.32,1,0.0,1.08,0.31,0.1,0.16,LEC 2023 Winter Groups,Middle
+Caps,Worlds 2022,33.0,1.2,-328.0,217.0,0.0,0.0,423.7,24.0,0.19,1,0.0,0.65,0.29,0.12,0.17,Worlds 2022 Play-In,Middle
+Caps,LEC Summer Playoffs 2022,50.0,0.5,92.0,-123.0,20.0,10.0,608.0,26.0,0.31,3,0.0,0.95,0.31,0.12,0.19,LEC 2022 Summer Playoffs,Middle
+Caps,LEC Summer 2022,50.0,0.7,-1.0,-129.0,22.0,22.0,644.9,29.0,0.33,6,0.0,1.0,0.38,0.08,0.24,LEC 2022 Summer,Middle
+Caps,MSI 2022,67.0,0.8,185.0,-8.0,19.0,5.0,486.9,26.0,0.33,14,0.0,1.06,0.43,0.11,0.23,MSI 2022,Middle
+Caps,LEC Spring Playoffs 2022,56.0,-2.3,195.0,-118.0,25.0,6.0,556.2,28.0,0.36,4,0.0,1.19,0.45,0.13,0.28,LEC 2022 Spring,Middle
+Caps,LEC Spring 2022,56.0,-2.9,209.0,-61.0,33.0,0.0,456.3,25.0,0.29,6,0.0,1.08,0.39,0.15,0.17,LEC 2022 Spring,Middle
+Caps,LEC Summer Playoffs 2021,44.0,6.2,-207.0,71.0,11.0,33.0,505.1,26.0,0.28,2,0.0,0.92,0.35,0.15,0.2,LEC 2021 Summer Playoffs,Middle
+Caps,LEC Summer 2021,56.0,4.3,255.0,280.0,28.0,22.0,458.7,23.0,0.3,7,0.0,1.08,0.4,0.18,0.19,LEC 2021 Summer,Middle
+Caps,LEC Spring Playoffs 2021,31.0,-3.8,76.0,-213.0,15.0,8.0,605.0,32.0,0.3,1,0.0,1.02,0.41,0.14,0.18,LEC 2021 Spring Playoffs,Middle
+Caps,LEC Spring 2021,44.0,4.2,365.0,164.0,17.0,6.0,572.4,27.0,0.34,6,0.0,1.0,0.37,0.11,0.16,LEC 2021 Spring,Middle
+Caps,Worlds 2020,50.0,-3.3,-129.0,58.0,29.0,7.0,555.2,26.0,0.36,3,0.0,0.92,0.33,0.15,0.17,Worlds 2020 Main Event,Middle
+Caps,LEC Summer Playoffs 2020,59.0,3.5,181.0,-60.0,24.0,12.0,560.7,27.0,0.35,12,0.0,1.13,0.37,0.12,0.18,LEC 2020 Summer Playoffs,Middle
+Caps,LEC Summer 2020,61.0,2.3,384.0,98.0,22.0,0.0,574.9,29.0,0.33,6,0.0,1.01,0.4,0.14,0.19,LEC 2020 Summer,Middle
+Caps,LEC Spring Playoffs 2020,43.0,-4.9,-3.0,-323.0,25.0,6.0,750.5,33.0,0.43,3,1.0,1.06,0.35,0.14,0.29,LEC 2020 Spring Playoffs,Middle
+Caps,LEC Spring 2020,50.0,-1.5,86.0,384.0,50.0,6.0,627.5,27.0,0.48,5,0.0,0.99,0.32,0.09,0.24,LEC 2020 Spring,Middle
+Caps,Worlds 2019,78.0,6.8,200.0,133.0,22.0,6.0,426.4,25.0,0.27,10,0.0,0.96,0.43,0.15,0.18,Worlds 2019 Main Event,Middle
+Caps,LEC Summer Playoffs 2019,40.0,-2.5,96.0,199.0,20.0,0.0,520.0,26.0,0.34,7,0.0,0.87,0.44,0.15,0.12,LEC 2019 Summer Playoffs,Middle
+Caps,NA-EU Rift Rivals 2019,50.0,-7.5,514.0,-413.0,25.0,0.0,519.5,25.0,0.4,0,0.0,0.86,0.36,0.07,0.19,Worlds 2019 Main Event,Middle
+Caps,LEC Summer 2019,67.0,7.3,1042.0,569.0,33.0,17.0,599.1,27.0,0.42,23,0.0,0.82,0.36,0.09,0.18,LEC 2019 Summer,Middle
+Caps,MSI 2019,53.0,-2.5,217.0,114.0,6.0,11.0,553.5,29.0,0.35,13,1.0,0.91,0.42,0.12,0.22,MSI 2019 Main Event,Middle
+Caps,LEC Spring Playoffs 2019,50.0,-18.3,67.0,-194.0,33.0,0.0,485.9,24.0,0.45,3,0.0,1.01,0.43,0.1,0.27,LEC 2019 Spring Playoffs,Middle
+Caps,LEC Spring 2019,61.0,3.2,186.0,-23.0,11.0,11.0,550.4,26.0,0.35,12,0.0,1.09,0.46,0.17,0.22,LEC 2019 Spring,Middle
+Caps,Worlds 2018,41.0,-4.2,-9.0,-44.0,29.0,12.0,415.4,21.0,0.3,10,0.0,1.2,0.45,0.17,0.24,Worlds 2018 Main Event,Middle
+Caps,EU LCS Summer Playoffs 2018,50.0,2.6,157.0,-34.0,13.0,13.0,609.8,32.0,0.31,3,0.0,1.31,0.44,0.12,0.27,EU LCS 2018 Summer Playoffs,Middle
+Caps,NA LCS-EULCS Rift-Rivals 2018,80.0,34.6,1261.0,1007.0,20.0,0.0,614.8,29.0,0.41,2,0.0,1.08,0.4,0.09,0.23,EU LCS 2018 Summer,Middle
+Caps,EU LCS Summer 2018,61.0,23.2,805.0,975.0,28.0,6.0,559.2,31.0,0.35,14,0.0,1.26,0.45,0.11,0.26,EU LCS 2018 Summer,Middle
+Caps,MSI 2018,71.0,7.1,458.0,348.0,29.0,7.0,578.7,31.0,0.23,4,0.0,1.14,0.52,0.11,0.24,MSI 2018 Main Event,Middle
+Caps,EU LCS Spring Playoffs 2018,57.0,6.4,404.0,626.0,14.0,0.0,662.6,30.0,0.35,4,0.0,0.96,0.49,0.1,0.15,EU LCS 2018 Spring Playoffs,Middle
+Caps,EU LCS Spring 2018,44.0,-1.6,82.0,-75.0,28.0,17.0,659.1,33.0,0.21,3,0.0,1.08,0.46,0.1,0.29,EU LCS 2018 Spring,Middle
+Caps,Worlds 2017,33.0,-1.4,45.0,-34.0,50.0,0.0,573.5,31.0,0.18,1,0.0,,0.45,0.1,0.13,Worlds 2017 Main Event,Middle
+Caps,World Championship Play-In 2017,86.0,15.0,770.0,588.0,14.0,14.0,671.7,34.0,0.31,1,0.0,,0.45,0.13,0.17,Worlds 2017 Play-In,Middle
+Caps,EU LCS Regional Qualifiers 2017,33.0,-11.7,-45.0,87.0,0.0,0.0,606.4,30.0,0.25,1,0.0,,0.45,0.09,0.13,EU Regional Finals 2017,Middle
+Caps,EU LCS Summer Playoffs 2017,44.0,2.1,-110.0,-85.0,11.0,22.0,507.5,28.0,0.21,0,0.0,,0.49,0.13,0.13,EU LCS 2017 Summer Playoffs,Middle
+Caps,EU-NA Rift Rivals 2017,33.0,-6.2,-616.0,-509.0,33.0,33.0,505.9,33.0,0.18,0,0.0,,0.48,0.11,0.13,EU LCS 2017 Summer,Middle
+Caps,EU LCS Summer 2017,52.0,2.3,170.0,219.0,31.0,7.0,682.4,33.0,0.32,11,0.0,,0.5,0.14,0.19,EU LCS 2017 Summer,Middle
+Caps,EU LCS Spring Playoffs 2017,40.0,-0.9,-1.0,57.0,10.0,10.0,462.2,25.0,0.25,5,0.0,,0.47,0.12,0.16,EU LCS 2017 Spring Playoffs,Middle
+Caps,EU LCS Spring 2017,54.0,-1.2,-12.0,11.0,25.0,11.0,481.5,26.0,0.22,18,0.0,,0.55,0.2,0.18,EU LCS 2017 Spring,Middle
+Razork,ALL,67.0,6.3,530.0,230.0,60.0,7.0,430.7,18.0,0.37,2,0.0,1.62,0.32,0.3,0.44,,Jungle
+Razork,LEC Summer Groups 2023,67.0,3.0,105.0,-43.0,67.0,0.0,403.9,17.0,0.33,1,0.0,1.74,0.33,0.28,0.51,LEC 2023 Summer Groups,Jungle
+Razork,LEC Summer 2023,67.0,8.6,813.0,412.0,56.0,11.0,448.5,19.0,0.4,1,0.0,1.55,0.31,0.32,0.4,LEC 2023 Summer Season,Jungle
+Razork,LEC Spring Groups 2023,83.0,13.0,132.0,403.0,33.0,0.0,440.2,19.0,0.4,0,0.0,1.49,0.29,0.21,0.29,LEC 2023 Spring Groups,Jungle
+Razork,LEC Spring Season 2023,67.0,5.4,143.0,83.0,56.0,0.0,316.8,14.0,0.29,1,0.0,1.48,0.34,0.26,0.35,LEC 2023 Spring Season,Jungle
+Razork,LEC Winter 2023,67.0,1.7,-283.0,135.0,11.0,22.0,458.2,20.0,0.24,0,0.0,1.62,0.25,0.22,0.4,LEC 2023 Winter Groups,Jungle
+Razork,Worlds 2022,67.0,3.5,-342.0,14.0,17.0,17.0,328.3,16.0,0.22,0,0.0,1.45,0.32,0.3,0.39,Worlds 2022 Play-In,Jungle
+Razork,World Championship Play-In 2022,60.0,8.6,-250.0,121.0,20.0,20.0,400.8,17.0,0.33,1,0.0,1.99,0.65,0.33,0.57,Worlds 2022 Play-In,Jungle
+Razork,LEC Summer Playoffs 2022,75.0,8.3,270.0,293.0,50.0,0.0,313.4,13.0,0.31,2,0.0,1.48,0.41,0.38,0.38,LEC 2022 Summer Playoffs,Jungle
+Razork,LEC Summer 2022,53.0,-0.6,46.0,13.0,47.0,11.0,312.1,14.0,0.23,3,0.0,1.65,0.39,0.34,0.45,LEC 2022 Summer,Jungle
+Razork,LEC Spring Playoffs 2022,83.0,12.0,-116.0,400.0,17.0,8.0,334.4,17.0,0.28,1,0.0,1.49,0.45,0.3,0.37,LEC 2022 Spring,Jungle
+Razork,LEC Spring 2022,61.0,5.7,141.0,61.0,17.0,11.0,359.4,18.0,0.34,4,0.0,1.42,0.37,0.34,0.35,LEC 2022 Spring,Jungle
+Razork,LEC Summer Playoffs 2021,50.0,4.8,-202.0,81.0,0.0,20.0,353.9,18.0,0.26,1,0.0,1.43,0.43,0.34,0.36,LEC 2021 Summer Playoffs,Jungle
+Razork,LEC Summer 2021,44.0,-0.7,202.0,53.0,56.0,11.0,396.7,21.0,0.35,5,0.0,1.53,0.48,0.36,0.42,LEC 2021 Summer,Jungle
+Razork,LEC Spring 2021,78.0,5.3,287.0,244.0,39.0,6.0,432.0,21.0,0.31,3,0.0,1.44,0.42,0.26,0.34,LEC 2021 Spring,Jungle
+Razork,LEC Summer 2020,61.0,7.2,83.0,104.0,28.0,11.0,245.1,14.0,0.21,2,0.0,1.55,0.48,0.37,0.36,LEC 2020 Summer,Jungle
+Razork,LEC Spring Playoffs 2020,50.0,2.8,-39.0,21.0,50.0,0.0,194.4,11.0,0.21,0,0.0,1.61,0.57,0.35,0.47,LEC 2020 Spring Playoffs,Jungle
+Razork,LEC Spring 2020,50.0,-0.6,270.0,228.0,50.0,6.0,234.9,15.0,0.25,2,0.0,1.76,0.7,0.34,0.39,LEC 2020 Spring,Jungle
+Razork,EU Master Summer 2019,25.0,-3.7,-8.0,-303.0,58.0,8.0,381.5,19.0,0.4,1,0.0,1.88,0.88,0.34,0.33,LEC 2019 Summer,Jungle
+Razork,LVP SLO Summer 2019,69.0,4.4,116.0,107.0,15.0,4.0,267.0,14.0,0.28,1,0.0,2.14,0.9,0.35,0.45,LVP SLO 2019 Summer,Jungle
+Razork,LVP SLO Spring 2019,30.0,-6.3,-165.0,-298.0,35.0,4.0,225.3,14.0,0.22,2,0.0,1.56,0.5,0.32,0.39,LVP SLO 2019 Spring,Jungle
+Razork,EM 2018 Summer Play-In,71.0,9.0,390.0,443.0,14.0,14.0,216.9,12.0,0.32,1,0.0,1.65,0.42,0.38,0.45,EM 2018 Summer Play-In,Jungle
+Razork,LVP Summer 2018,51.0,-4.1,-96.0,-147.0,27.0,8.0,300.2,15.0,0.29,5,0.0,1.5,0.43,0.26,0.38,LVP SLO 2018 Summer,Jungle
+Razork,LVP Spring 2018,55.0,2.2,459.0,430.0,52.0,7.0,271.9,13.0,0.34,0,0.0,2.68,1.42,0.25,0.48,EU LCS 2018 Spring,Jungle
+Yike,ALL,56.0,1.0,423.0,84.0,33.0,17.0,392.6,16.0,0.45,2,0.0,1.27,0.27,0.2,0.25,,Jungle
+Yike,LEC Summer Playoffs 2023,20.0,-14.0,298.0,-349.0,80.0,0.0,385.8,14.0,0.48,0,0.0,1.3,0.29,0.2,0.26,LEC 2022 Summer Playoffs,Jungle
+Yike,LEC Summer Groups 2023,50.0,3.0,458.0,463.0,25.0,0.0,325.4,13.0,0.6,1,0.0,1.28,0.23,0.15,0.28,LEC 2023 Summer Groups,Jungle
+Yike,LEC Summer 2023,78.0,8.4,476.0,156.0,11.0,33.0,426.3,19.0,0.37,1,0.0,1.25,0.28,0.23,0.23,LEC 2023 Summer Season,Jungle
+Yike,MSI 2023,67.0,4.9,374.0,312.0,33.0,7.0,515.8,22.0,0.44,6,0.0,1.57,0.24,0.21,0.27,MSI 2023,Jungle
+Yike,LEC Spring Playoffs 2023,100.0,13.4,69.0,94.0,40.0,40.0,383.9,17.0,0.31,0,0.0,1.64,0.29,0.19,0.35,LEC 2023 Spring Playoffs,Jungle
+Yike,LEC Spring Groups 2023,88.0,19.3,591.0,271.0,38.0,25.0,514.9,23.0,0.39,3,0.0,1.53,0.27,0.15,0.29,LEC 2023 Spring Groups,Jungle
+Yike,LEC Spring Season 2023,78.0,12.2,205.0,398.0,11.0,11.0,392.6,15.0,0.45,0,0.0,1.73,0.29,0.24,0.36,LEC 2023 Spring Season,Jungle
+Yike,LEC Winter Playoffs 2023,100.0,21.3,786.0,854.0,43.0,0.0,583.9,23.0,0.45,1,0.0,1.48,0.24,0.17,0.29,LEC 2023 Winter Playoffs,Jungle
+Yike,LEC Winter Groups 2023,80.0,21.2,943.0,1125.0,20.0,0.0,686.8,24.0,0.54,3,0.0,1.42,0.23,0.14,0.28,LEC 2023 Winter Groups,Jungle
+Yike,LEC Winter 2023,89.0,18.8,1213.0,786.0,11.0,22.0,536.9,23.0,0.42,5,0.0,1.77,0.42,0.23,0.43,LEC 2023 Winter Groups,Jungle
+Yike,EM Summer 2022,44.0,-0.6,242.0,150.0,56.0,6.0,429.1,17.0,0.41,1,0.0,1.24,0.27,0.28,0.32,EM 2022 Summer Main Event,Jungle
+Yike,LFL Summer Playoffs 2022,46.0,-3.8,-34.0,-79.0,46.0,15.0,341.5,14.0,0.3,2,0.0,1.62,0.44,0.33,0.39,LFL 2022 Summer Playoffs,Jungle
+Yike,LFL Summer 2022,67.0,5.5,123.0,261.0,28.0,6.0,366.9,16.0,0.38,0,0.0,1.49,0.35,0.31,0.38,LFL 2022 Summer,Jungle
+Yike,EM Spring 2022,63.0,3.1,222.0,192.0,50.0,0.0,361.9,17.0,0.41,1,0.0,1.37,0.36,0.37,0.33,EM 2022 Spring Main Event,Jungle
+Yike,LFL Spring Playoffs 2022,75.0,4.8,733.0,427.0,50.0,0.0,294.2,17.0,0.34,1,0.0,1.26,0.39,0.44,0.28,LFL 2022 Spring Playoffs,Jungle
+Yike,LFL Spring 2022,61.0,1.7,-230.0,27.0,17.0,11.0,341.9,16.0,0.32,0,0.0,1.36,0.37,0.42,0.29,LFL 2022 Spring,Jungle
+Yike,LFL Promotion 2021,43.0,-6.9,-36.0,-134.0,29.0,14.0,378.5,19.0,0.38,0,0.0,1.26,0.56,0.34,0.26,LFL 2022 Promotion,Jungle
+Yike,LFL Div2 Summer Playoffs 2021,75.0,1.5,169.0,147.0,25.0,0.0,561.8,21.0,0.54,1,0.0,1.29,0.39,0.37,0.29,LFL 2021 Summer Playoffs,Jungle
+Yike,LFL Div2 Summer 2021,67.0,7.8,650.0,385.0,44.0,0.0,479.7,23.0,0.44,2,0.0,1.34,0.31,0.33,0.34,LFL 2021 Summer,Jungle
+Yike,PG Nationals Spring Playoffs 2021,54.0,2.3,-453.0,-102.0,31.0,0.0,374.8,20.0,0.26,0,1.0,1.65,0.51,0.31,0.42,PG Nationals 2021 Spring Playoffs,Jungle
+Yike,PG Nationals Spring 2021,79.0,9.9,224.0,630.0,36.0,0.0,362.6,20.0,0.3,1,0.0,1.53,0.59,0.42,0.3,PG Nationals 2021 Spring,Jungle
+Exakick,ALL,44.0,-3.3,-330.0,-74.0,13.0,6.0,624.5,30.0,0.26,0,0.0,1.42,0.56,0.2,0.37,,ADC
+Exakick,LEC Summer Groups 2023,57.0,3.1,-69.0,97.0,14.0,0.0,559.4,28.0,0.21,0,0.0,1.53,0.68,0.24,0.36,LEC 2023 Summer Groups,ADC
+Exakick,LEC Summer 2023,33.0,-8.2,-533.0,-207.0,11.0,11.0,675.2,31.0,0.3,0,0.0,1.34,0.47,0.17,0.37,LEC 2023 Summer Season,ADC
+Exakick,LEC Spring Groups 2023,25.0,-9.0,-674.0,-256.0,25.0,25.0,541.2,28.0,0.16,0,0.0,1.58,0.53,0.24,0.44,LEC 2023 Spring Groups,ADC
+Exakick,LEC Spring Season 2023,56.0,-1.0,-425.0,-226.0,22.0,22.0,498.9,27.0,0.21,2,0.0,1.56,0.5,0.18,0.43,LEC 2023 Spring Season,ADC
+Exakick,LEC Winter Playoffs 2023,60.0,-1.2,-336.0,-433.0,40.0,0.0,579.6,28.0,0.31,2,0.0,1.24,0.45,0.13,0.27,LEC 2023 Winter Playoffs,ADC
+Exakick,LEC Winter Groups 2023,50.0,3.3,-331.0,-89.0,0.0,33.0,557.6,26.0,0.26,0,0.0,1.53,0.44,0.14,0.52,LEC 2023 Winter Groups,ADC
+Exakick,LEC Winter 2023,100.0,21.6,1042.0,512.0,11.0,0.0,700.1,29.0,0.32,1,0.0,1.59,0.5,0.2,0.43,LEC 2023 Winter Groups,ADC
+Exakick,EM Summer 2022,63.0,6.1,-38.0,-64.0,19.0,19.0,670.7,28.0,0.38,2,0.0,1.43,0.45,0.17,0.42,EM 2022 Summer Main Event,ADC
+Exakick,LFL Summer Playoffs 2022,77.0,8.2,87.0,17.0,23.0,8.0,689.6,30.0,0.28,3,0.0,1.43,0.5,0.2,0.39,LFL 2022 Summer Playoffs,ADC
+Exakick,LFL Summer 2022,78.0,15.4,321.0,650.0,28.0,11.0,606.7,26.0,0.35,1,0.0,1.5,0.49,0.18,0.42,LFL 2022 Summer,ADC
+Exakick,EM Spring 2022,56.0,5.9,259.0,58.0,19.0,25.0,612.3,29.0,0.37,1,0.0,1.33,0.53,0.22,0.3,EM 2022 Spring Main Event,ADC
+Exakick,LFL Spring Playoffs 2022,25.0,-8.5,35.0,-256.0,38.0,0.0,543.0,31.0,0.25,0,0.0,1.42,0.55,0.2,0.41,LFL 2022 Spring Playoffs,ADC
+Exakick,LFL Spring 2022,61.0,6.4,38.0,268.0,28.0,17.0,564.1,26.0,0.3,7,0.0,1.6,0.56,0.23,0.43,LFL 2022 Spring,ADC
+Exakick,LFL Summer Playoffs 2021,100.0,16.6,825.0,540.0,20.0,0.0,897.0,35.0,0.24,4,0.0,2.02,0.88,0.23,0.38,LFL 2021 Summer Playoffs,ADC
+Exakick,LFL Summer 2021,59.0,8.0,-7.0,66.0,24.0,6.0,479.9,23.0,0.24,5,0.0,1.54,0.7,0.21,0.3,LFL 2021 Summer,ADC
+Exakick,LFL Spring 2021,50.0,-1.1,-366.0,-217.0,22.0,6.0,513.3,26.0,0.23,4,0.0,1.52,0.5,0.19,0.41,LFL 2021 Spring,ADC
+Exakick,LFL Finals 2020,67.0,-3.7,-955.0,-498.0,0.0,33.0,505.5,24.0,0.26,1,0.0,1.39,0.41,0.21,0.36,LFL 2020 Finals,ADC
+Exakick,LFL Summer Playoffs 2020,60.0,9.3,-138.0,225.0,30.0,0.0,506.0,21.0,0.51,0,0.0,1.36,0.4,0.19,0.3,LFL 2020 Summer Playoffs,ADC
+Exakick,EM Summer 2020,58.0,1.3,118.0,-49.0,42.0,8.0,484.5,26.0,0.27,0,0.0,1.26,0.48,0.24,0.28,EM 2020 Summer Main Event,ADC
+Exakick,EM Summer Play-In 2020,88.0,8.5,1171.0,391.0,25.0,25.0,580.5,23.0,0.56,5,0.0,1.32,0.46,0.24,0.32,EM 2020 Summer Play-In,ADC
+Exakick,LFL EM Qualification 2020,60.0,-1.4,440.0,-235.0,40.0,0.0,578.7,29.0,0.32,0,0.0,1.21,0.48,0.23,0.28,LFL 2020 EM Qualification,ADC
+Exakick,LFL Summer 2020,40.0,1.0,-205.0,-412.0,13.0,13.0,593.0,24.0,0.37,2,0.0,1.16,0.44,0.23,0.25,LFL 2020 Summer,ADC
+Upset,ALL,33.0,-2.8,-161.0,-72.0,33.0,0.0,505.6,24.0,0.19,0,0.0,1.2,0.46,0.13,0.29,,ADC
+Upset,LEC Summer 2023,33.0,-2.8,-161.0,-72.0,33.0,0.0,505.6,24.0,0.19,0,0.0,1.2,0.46,0.13,0.29,LEC 2023 Summer Season,ADC
+Upset,LEC Spring Playoffs 2023,43.0,-6.3,-148.0,-268.0,14.0,0.0,533.4,28.0,0.17,0,0.0,1.54,0.48,0.14,0.31,LEC 2023 Spring Playoffs,ADC
+Upset,LEC Spring Groups 2023,50.0,-0.5,486.0,389.0,50.0,0.0,642.8,25.0,0.48,0,0.0,1.55,0.43,0.1,0.26,LEC 2023 Spring Groups,ADC
+Upset,LEC Spring Season 2023,67.0,4.6,835.0,-38.0,11.0,0.0,641.1,27.0,0.37,0,0.0,1.65,0.47,0.14,0.34,LEC 2023 Spring Season,ADC
+Upset,Worlds 2022,67.0,4.5,-561.0,166.0,17.0,17.0,489.9,24.0,0.2,1,0.0,1.03,0.44,0.1,0.2,Worlds 2022 Play-In,ADC
+Upset,World Championship Play-In 2022,80.0,13.6,115.0,232.0,20.0,0.0,523.7,22.0,0.32,1,1.0,1.21,0.48,0.14,0.26,Worlds 2022 Play-In,ADC
+Upset,LEC Summer Playoffs 2022,75.0,15.2,616.0,262.0,44.0,0.0,801.3,32.0,0.31,4,0.0,1.29,0.45,0.11,0.34,LEC 2022 Summer Playoffs,ADC
+Upset,LEC Summer 2022,68.0,5.4,181.0,285.0,11.0,0.0,664.0,29.0,0.24,5,0.0,1.24,0.47,0.12,0.28,LEC 2022 Summer,ADC
+Upset,LEC Spring Playoffs 2022,50.0,1.2,-48.0,-57.0,0.0,0.0,509.7,25.0,0.22,3,0.0,1.15,0.49,0.13,0.21,LEC 2022 Spring,ADC
+Upset,LEC Spring 2022,67.0,10.1,771.0,337.0,28.0,0.0,512.1,25.0,0.33,5,0.0,1.44,0.5,0.14,0.3,LEC 2022 Spring,ADC
+Upset,LEC Summer Playoffs 2021,68.0,9.3,561.0,405.0,27.0,0.0,571.7,28.0,0.37,2,0.0,1.43,0.64,0.15,0.28,LEC 2021 Summer Playoffs,ADC
+Upset,LEC Summer 2021,78.0,12.8,755.0,351.0,33.0,0.0,513.3,24.0,0.35,3,0.0,1.62,0.69,0.1,0.38,LEC 2021 Summer,ADC
+Upset,LEC Spring Playoffs 2021,86.0,22.4,725.0,567.0,43.0,0.0,525.2,26.0,0.28,2,0.0,1.56,0.62,0.11,0.31,LEC 2021 Spring Playoffs,ADC
+Upset,LEC Spring 2021,78.0,11.7,330.0,273.0,33.0,0.0,493.8,24.0,0.36,4,0.0,1.36,0.52,0.12,0.29,LEC 2021 Spring,ADC
+Upset,LEC Summer 2020,61.0,9.3,11.0,47.0,11.0,6.0,585.4,32.0,0.21,0,0.0,1.33,0.41,0.09,0.36,LEC 2020 Summer,ADC
+Upset,LEC Spring Playoffs 2020,75.0,13.2,357.0,327.0,25.0,0.0,643.5,31.0,0.29,1,0.0,1.39,0.44,0.11,0.35,LEC 2020 Spring Playoffs,ADC
+Upset,LEC Spring 2020,61.0,0.2,117.0,219.0,17.0,11.0,555.8,30.0,0.27,1,0.0,1.2,0.38,0.08,0.28,LEC 2020 Spring,ADC
+Upset,LEC Regional Finals 2019,33.0,-5.7,-644.0,-133.0,67.0,0.0,344.1,22.0,0.23,0,0.0,1.02,0.35,0.05,0.26,LEC 2019 Regional Finals,ADC
+Upset,LEC Summer Playoffs 2019,64.0,1.1,-9.0,230.0,18.0,0.0,562.2,28.0,0.32,4,0.0,1.14,0.38,0.08,0.25,LEC 2019 Summer Playoffs,ADC
+Upset,LEC Summer 2019,61.0,5.9,315.0,120.0,22.0,17.0,583.3,31.0,0.32,2,0.0,1.28,0.4,0.07,0.38,LEC 2019 Summer,ADC
+Upset,LEC Spring 2019,68.0,3.8,102.0,75.0,21.0,5.0,482.1,29.0,0.2,0,1.0,1.22,0.45,0.09,0.31,LEC 2019 Spring,ADC
+Upset,EU LCS Regional Qualifiers 2018,75.0,6.5,-104.0,453.0,25.0,0.0,615.7,36.0,0.19,1,0.0,1.21,0.36,0.06,0.38,EU Regional Finals 2018,ADC
+Upset,EU LCS Summer Playoffs 2018,39.0,-4.6,4.0,-91.0,31.0,8.0,696.3,38.0,0.24,6,0.0,1.39,0.48,0.12,0.36,EU LCS 2018 Summer Playoffs,ADC
+Upset,EU LCS Summer 2018,55.0,-3.3,14.0,-140.0,20.0,0.0,563.2,33.0,0.22,1,0.0,1.43,0.55,0.15,0.34,EU LCS 2018 Summer,ADC
+Upset,EU LCS Spring 2018,25.0,-8.6,-199.0,-283.0,19.0,0.0,647.4,33.0,0.18,1,0.0,1.62,0.48,0.1,0.52,EU LCS 2018 Spring,ADC
+Upset,EU LCS Spring Promotion 2017,62.0,8.4,43.0,20.0,15.0,0.0,621.7,32.0,0.21,1,0.0,,0.47,0.13,0.36,EU LCS 2017 Spring,ADC
+Upset,EU CS Summer 2017,43.0,-5.4,10.0,232.0,21.0,7.0,580.7,29.0,0.28,1,0.0,,0.48,0.12,0.33,EU LCS 2017 Summer,ADC
+Upset,EU CS Spring 2017,50.0,-2.2,273.0,147.0,7.0,7.0,498.1,25.0,0.32,2,0.0,,0.49,0.14,0.25,EU LCS 2017 Spring,ADC
+Upset,IEM Gyeonggi 2016,100.0,12.0,-16.0,-270.0,60.0,0.0,644.1,30.0,0.36,3,0.0,,0.47,0.1,0.27,IEM Season 11 Gyeonggi,ADC
+Humanoid,ALL,67.0,4.2,172.0,111.0,13.0,0.0,712.0,30.0,0.34,3,0.0,0.93,0.29,0.03,0.27,,Middle
+Humanoid,LEC Summer Groups 2023,50.0,-3.5,38.0,-200.0,0.0,0.0,824.9,36.0,0.31,1,0.0,0.92,0.23,0.05,0.32,LEC 2023 Summer Groups,Middle
+Humanoid,LEC Summer 2023,78.0,9.3,261.0,319.0,22.0,0.0,636.7,27.0,0.36,2,0.0,0.93,0.33,0.02,0.24,LEC 2023 Summer Season,Middle
+Humanoid,LEC Spring Groups 2023,50.0,4.8,396.0,55.0,17.0,33.0,732.9,31.0,0.39,1,0.0,1.03,0.39,0.05,0.18,LEC 2023 Spring Groups,Middle
+Humanoid,LEC Spring Season 2023,33.0,-3.6,-84.0,-292.0,22.0,0.0,681.0,29.0,0.28,1,0.0,1.14,0.43,0.1,0.22,LEC 2023 Spring Season,Middle
+Humanoid,LEC Winter 2023,56.0,-1.2,130.0,-36.0,11.0,22.0,659.9,30.0,0.2,0,0.0,0.82,0.37,0.04,0.13,LEC 2023 Winter Groups,Middle
+Humanoid,Worlds 2022,83.0,18.5,351.0,632.0,0.0,17.0,673.3,34.0,0.19,4,0.0,0.59,0.33,0.03,0.11,Worlds 2022 Play-In,Middle
+Humanoid,World Championship Play-In 2022,100.0,28.4,702.0,724.0,20.0,20.0,813.3,34.0,0.29,4,0.0,0.97,0.42,0.09,0.2,Worlds 2022 Play-In,Middle
+Humanoid,LEC Summer Playoffs 2022,69.0,4.5,107.0,213.0,6.0,0.0,612.9,26.0,0.27,5,0.0,0.98,0.4,0.07,0.22,LEC 2022 Summer Playoffs,Middle
+Humanoid,LEC Summer 2022,74.0,8.6,209.0,159.0,16.0,16.0,664.0,30.0,0.22,3,0.0,1.23,0.52,0.08,0.28,LEC 2022 Summer,Middle
+Humanoid,LEC Spring Playoffs 2022,67.0,9.7,-124.0,60.0,8.0,17.0,530.4,26.0,0.22,2,0.0,1.24,0.56,0.08,0.33,LEC 2022 Spring,Middle
+Humanoid,LEC Spring 2022,67.0,10.4,651.0,365.0,22.0,11.0,510.6,26.0,0.31,4,0.0,1.08,0.43,0.1,0.19,LEC 2022 Spring,Middle
+Humanoid,Worlds 2021,55.0,-1.2,200.0,134.0,0.0,9.0,534.3,29.0,0.27,6,0.0,1.12,0.44,0.1,0.24,Worlds 2021 Main Event,Middle
+Humanoid,LEC Summer Playoffs 2021,64.0,-0.5,9.0,-43.0,27.0,9.0,543.1,23.0,0.39,6,0.0,1.06,0.41,0.11,0.21,LEC 2021 Summer Playoffs,Middle
+Humanoid,LEC Summer 2021,44.0,0.7,63.0,159.0,28.0,11.0,553.2,27.0,0.29,5,0.0,1.01,0.4,0.11,0.2,LEC 2021 Summer,Middle
+Humanoid,MSI 2021,62.0,7.5,79.0,-16.0,24.0,10.0,561.0,28.0,0.28,7,0.0,0.96,0.42,0.12,0.21,MSI 2021,Middle
+Humanoid,LEC Spring Playoffs 2021,46.0,-2.6,-252.0,-227.0,8.0,0.0,538.7,27.0,0.36,2,0.0,0.95,0.38,0.09,0.21,LEC 2021 Spring Playoffs,Middle
+Humanoid,LEC Spring 2021,72.0,4.9,530.0,-38.0,22.0,0.0,520.3,27.0,0.31,6,0.0,0.98,0.4,0.11,0.21,LEC 2021 Spring,Middle
+Humanoid,World Championship Play-In 2020,90.0,15.7,410.0,234.0,10.0,0.0,601.0,30.0,0.23,0,0.0,0.92,0.4,0.13,0.17,Worlds 2020 Play-In,Middle
+Humanoid,LEC Summer Playoffs 2020,36.0,-10.8,-329.0,-199.0,27.0,18.0,490.2,25.0,0.3,3,0.0,0.79,0.4,0.11,0.12,LEC 2020 Summer Playoffs,Middle
+Humanoid,LEC Summer 2020,72.0,8.7,269.0,46.0,28.0,11.0,606.1,31.0,0.32,6,0.0,1.02,0.44,0.15,0.19,LEC 2020 Summer,Middle
+Humanoid,LEC Spring Playoffs 2020,30.0,-9.7,-152.0,-187.0,8.0,17.0,384.6,20.0,0.26,4,0.0,0.97,0.44,0.15,0.18,LEC 2020 Spring Playoffs,Middle
+Humanoid,LEC Spring 2020,61.0,6.2,-115.0,204.0,33.0,17.0,542.9,30.0,0.25,12,0.0,1.08,0.48,0.17,0.23,LEC 2020 Spring,Middle
+Humanoid,Worlds 2019,55.0,5.5,53.0,4.0,0.0,9.0,427.8,26.0,0.21,2,0.0,0.93,0.46,0.18,0.21,Worlds 2019 Main Event,Middle
+Humanoid,World Championship Play-In 2019,78.0,14.0,587.0,449.0,0.0,11.0,562.6,28.0,0.27,5,0.0,1.03,0.5,0.18,0.23,Worlds 2019 Play-In,Middle
+Humanoid,LEC Regional Finals 2019,91.0,16.5,390.0,531.0,9.0,9.0,474.3,26.0,0.22,5,0.0,1.07,0.45,0.14,0.23,LEC 2019 Regional Finals,Middle
+Humanoid,LEC Summer Playoffs 2019,33.0,-6.3,-697.0,-312.0,0.0,33.0,392.8,23.0,0.04,1,0.0,0.74,0.39,0.14,0.11,LEC 2019 Summer Playoffs,Middle
+Humanoid,LEC Summer 2019,50.0,-1.3,-33.0,-74.0,17.0,11.0,482.0,27.0,0.23,13,0.0,1.02,0.45,0.14,0.21,LEC 2019 Summer,Middle
+Humanoid,LEC Spring Playoffs 2019,63.0,1.6,-45.0,-114.0,13.0,0.0,567.8,29.0,0.24,2,0.0,0.96,0.47,0.16,0.17,LEC 2019 Spring Playoffs,Middle
+Humanoid,LEC Spring 2019,47.0,3.8,121.0,-63.0,22.0,6.0,489.7,28.0,0.23,2,0.0,1.02,0.48,0.18,0.21,LEC 2019 Spring,Middle
+Humanoid,Ultraliga Season 0,67.0,3.9,316.0,20.0,30.0,17.0,571.5,24.0,0.33,13,0.0,1.18,0.47,0.18,0.19,Ultraliga Season 0 Stage 2,Middle
+Humanoid,TCL Summer Playoffs 2018,100.0,18.5,107.0,519.0,0.0,13.0,430.4,28.0,0.2,0,0.0,1.11,0.48,0.16,0.16,TCL 2018 Summer Playoffs,Middle
+Humanoid,TCL Summer 2018,79.0,9.4,153.0,189.0,21.0,11.0,554.8,29.0,0.26,9,0.0,1.13,0.48,0.18,0.17,TCL 2018 Summer,Middle
+Humanoid,Hitpoint LEGENDS 1,100.0,20.8,1177.0,408.0,0.0,0.0,909.0,34.0,0.55,0,0.0,1.14,0.52,0.09,0.23,,Middle
+Humanoid,Hitpoint Masters Season 9,100.0,37.1,1607.0,1489.0,0.0,0.0,821.4,31.0,0.61,0,0.0,1.01,0.58,0.07,0.09,LEC 2023 Winter Season,Middle
+Hylissang,ALL,54.0,-1.0,171.0,325.0,23.0,15.0,130.4,6.0,0.26,0,0.0,2.97,1.56,0.35,0.27,,Support
+Hylissang,LEC Summer Groups 2023,50.0,-1.3,264.0,300.0,25.0,50.0,102.0,5.0,0.23,0,0.0,3.09,1.66,0.36,0.35,LEC 2023 Summer Groups,Support
+Hylissang,LEC Summer 2023,56.0,-0.9,130.0,337.0,22.0,0.0,143.0,6.0,0.27,0,0.0,2.92,1.52,0.35,0.24,LEC 2023 Summer Season,Support
+Hylissang,MSI 2023,67.0,8.0,-184.0,241.0,33.0,0.0,167.9,10.0,0.25,2,0.0,2.28,1.24,0.25,0.32,MSI 2023,Support
+Hylissang,LEC Spring Playoffs 2023,57.0,-1.4,6.0,64.0,14.0,0.0,148.3,7.0,0.28,0,0.0,2.99,1.51,0.38,0.39,LEC 2023 Spring Playoffs,Support
+Hylissang,LEC Spring Groups 2023,71.0,2.7,297.0,484.0,14.0,14.0,160.6,7.0,0.45,1,0.0,2.83,1.52,0.42,0.26,LEC 2023 Spring Groups,Support
+Hylissang,LEC Spring Season 2023,100.0,7.4,-88.0,71.0,30.0,20.0,196.0,9.0,0.23,0,0.0,2.87,1.4,0.34,0.36,LEC 2023 Spring Season,Support
+Hylissang,LEC Winter Playoffs 2023,75.0,6.4,-220.0,-75.0,8.0,8.0,215.8,9.0,0.28,0,0.0,2.7,1.43,0.31,0.32,LEC 2023 Winter Playoffs,Support
+Hylissang,LEC Winter Groups 2023,57.0,3.9,-48.0,26.0,43.0,14.0,185.1,8.0,0.37,0,0.0,2.8,1.28,0.32,0.37,LEC 2023 Winter Groups,Support
+Hylissang,LEC Winter 2023,44.0,-0.8,138.0,-114.0,22.0,0.0,213.4,9.0,0.34,0,0.0,2.8,1.3,0.32,0.32,LEC 2023 Winter Groups,Support
+Hylissang,Worlds 2022,50.0,-3.0,-488.0,-336.0,17.0,33.0,160.9,8.0,0.24,0,0.0,2.24,1.23,0.31,0.29,Worlds 2022 Play-In,Support
+Hylissang,World Championship Play-In 2022,67.0,3.7,137.0,186.0,0.0,33.0,249.1,9.0,0.28,0,0.0,2.38,1.34,0.29,0.32,Worlds 2022 Play-In,Support
+Hylissang,LEC Summer Playoffs 2022,63.0,3.6,97.0,-98.0,44.0,13.0,183.1,8.0,0.35,0,0.0,2.67,1.59,0.38,0.28,LEC 2022 Summer Playoffs,Support
+Hylissang,LEC Summer 2022,68.0,3.3,81.0,75.0,26.0,11.0,129.9,6.0,0.24,0,0.0,2.73,1.55,0.4,0.37,LEC 2022 Summer,Support
+Hylissang,LEC Spring Playoffs 2022,58.0,1.7,-234.0,165.0,0.0,50.0,131.2,7.0,0.24,0,0.0,2.77,1.43,0.39,0.42,LEC 2022 Spring,Support
+Hylissang,LEC Spring 2022,72.0,2.9,407.0,381.0,33.0,17.0,141.5,7.0,0.34,1,0.0,2.99,1.58,0.43,0.47,LEC 2022 Spring,Support
+Hylissang,Worlds 2021,33.0,-2.7,161.0,346.0,17.0,0.0,187.8,9.0,0.29,0,0.0,2.85,1.69,0.45,0.36,Worlds 2021 Main Event,Support
+Hylissang,LEC Summer Playoffs 2021,68.0,3.6,339.0,386.0,32.0,9.0,163.2,8.0,0.37,0,0.0,2.69,1.41,0.45,0.38,LEC 2021 Summer Playoffs,Support
+Hylissang,LEC Summer 2021,50.0,-2.4,241.0,210.0,33.0,17.0,148.7,7.0,0.33,2,0.0,2.58,1.51,0.48,0.34,LEC 2021 Summer,Support
+Hylissang,LEC Spring Playoffs 2021,43.0,-0.7,62.0,-145.0,43.0,14.0,167.3,9.0,0.28,0,0.0,2.75,1.54,0.45,0.38,LEC 2021 Spring Playoffs,Support
+Hylissang,LEC Spring 2021,72.0,0.4,-13.0,-35.0,33.0,17.0,179.3,9.0,0.32,0,0.0,2.41,1.3,0.48,0.34,LEC 2021 Spring,Support
+Hylissang,Worlds 2020,55.0,0.8,172.0,155.0,46.0,0.0,149.6,9.0,0.27,0,0.0,2.64,1.58,0.39,0.38,Worlds 2020 Main Event,Support
+Hylissang,LEC Summer Playoffs 2020,27.0,-1.4,38.0,-123.0,27.0,18.0,176.2,9.0,0.27,0,0.0,2.54,1.42,0.38,0.32,LEC 2020 Summer Playoffs,Support
+Hylissang,LEC Summer 2020,44.0,0.3,219.0,198.0,50.0,17.0,155.9,8.0,0.24,0,0.0,2.56,1.4,0.42,0.36,LEC 2020 Summer,Support
+Hylissang,LEC Spring Playoffs 2020,30.0,-15.5,-577.0,-229.0,0.0,20.0,195.5,11.0,0.3,0,0.0,1.37,0.82,0.3,0.15,LEC 2020 Spring Playoffs,Support
+Hylissang,LEC Spring 2020,56.0,-1.4,108.0,213.0,28.0,11.0,160.2,8.0,0.31,1,0.0,2.27,1.27,0.41,0.26,LEC 2020 Spring,Support
+Hylissang,Worlds 2019,70.0,4.1,175.0,123.0,40.0,10.0,336.4,17.0,0.3,1,0.0,2.15,1.19,0.37,0.39,Worlds 2019 Main Event,Support
+Hylissang,LEC Regional Finals 2019,33.0,10.0,239.0,122.0,0.0,67.0,324.6,15.0,0.46,0,0.0,1.95,1.09,0.33,0.22,LEC 2019 Regional Finals,Support
+Hylissang,LEC Summer Playoffs 2019,69.0,8.8,200.0,191.0,39.0,8.0,208.2,10.0,0.29,0,0.0,2.27,1.25,0.39,0.3,LEC 2019 Summer Playoffs,Support
+Hylissang,NA-EU Rift Rivals 2019,60.0,1.6,367.0,735.0,0.0,0.0,272.6,12.0,0.42,0,0.0,2.1,1.25,0.39,0.27,Worlds 2019 Main Event,Support
+Hylissang,LEC Summer 2019,33.0,0.2,55.0,-138.0,44.0,0.0,243.8,12.0,0.37,0,0.0,2.09,1.13,0.33,0.29,LEC 2019 Summer,Support
+Hylissang,LEC Spring Playoffs 2019,36.0,-12.5,73.0,-151.0,9.0,18.0,156.9,9.0,0.33,0,0.0,2.25,1.35,0.39,0.29,LEC 2019 Spring Playoffs,Support
+Hylissang,LEC Spring 2019,33.0,-5.9,51.0,224.0,44.0,6.0,157.6,9.0,0.27,0,0.0,2.19,1.32,0.39,0.24,LEC 2019 Spring,Support
+Hylissang,Worlds 2018,41.0,-3.9,41.0,-192.0,29.0,24.0,169.2,9.0,0.32,0,0.0,2.06,1.36,0.46,0.18,Worlds 2018 Main Event,Support
+Hylissang,EU LCS Summer Playoffs 2018,50.0,-1.6,-216.0,-108.0,13.0,13.0,148.7,8.0,0.25,0,0.0,2.02,1.18,0.34,0.22,EU LCS 2018 Summer Playoffs,Support
+Hylissang,NA LCS-EULCS Rift-Rivals 2018,20.0,-5.0,273.0,571.0,0.0,0.0,199.1,9.0,0.36,0,0.0,2.14,1.16,0.38,0.27,EU LCS 2018 Summer,Support
+Hylissang,EU LCS Summer 2018,56.0,1.3,79.0,185.0,33.0,11.0,184.3,10.0,0.31,1,0.0,1.95,1.04,0.38,0.26,EU LCS 2018 Summer,Support
+Hylissang,MSI 2018,57.0,2.4,37.0,177.0,29.0,21.0,141.3,8.0,0.19,0,0.0,2.09,1.32,0.42,0.24,MSI 2018 Main Event,Support
+Hylissang,EU LCS Spring Playoffs 2018,43.0,-1.7,-14.0,-350.0,14.0,14.0,162.0,8.0,0.26,0,0.0,1.91,1.22,0.47,0.17,EU LCS 2018 Spring Playoffs,Support
+Hylissang,EU LCS Spring 2018,61.0,1.1,229.0,150.0,50.0,6.0,135.5,7.0,0.23,0,0.0,2.36,1.48,0.53,0.26,EU LCS 2018 Spring,Support
+Hylissang,EU LCS Regional Qualifiers 2017,40.0,0.2,-71.0,-215.0,0.0,20.0,170.1,8.0,0.34,0,0.0,,1.12,0.24,0.27,EU Regional Finals 2017,Support
+Hylissang,EU LCS Summer Playoffs 2017,100.0,19.3,-201.0,99.0,0.0,67.0,136.8,9.0,0.09,0,0.0,,1.15,0.2,0.42,EU LCS 2017 Summer Playoffs,Support
+Hylissang,EU-NA Rift Rivals 2017,33.0,-6.6,-378.0,-476.0,22.0,0.0,153.9,8.0,0.23,0,0.0,,1.13,0.29,0.23,EU LCS 2017 Summer,Support
+Hylissang,EU LCS Summer 2017,60.0,1.9,-20.0,-44.0,11.0,11.0,164.1,8.0,0.28,1,0.0,,1.11,0.29,0.29,EU LCS 2017 Summer,Support
+Hylissang,EU LCS Spring Playoffs 2017,75.0,7.8,73.0,-193.0,13.0,25.0,188.2,9.0,0.2,0,0.0,,1.21,0.31,0.28,EU LCS 2017 Spring Playoffs,Support
+Hylissang,IEM Katowice 2017,40.0,-4.6,-61.0,-56.0,20.0,20.0,258.3,12.0,0.19,0,0.0,,1.26,0.39,0.45,LEC 2023 Winter Season,Support
+Hylissang,EU LCS Spring 2017,65.0,2.4,113.0,325.0,3.0,16.0,211.9,11.0,0.29,1,0.0,,1.2,0.34,0.39,EU LCS 2017 Spring,Support
+Hylissang,IEM Oakland 2016,60.0,-0.6,107.0,302.0,40.0,10.0,228.6,10.0,0.3,0,0.0,,1.06,0.22,0.32,IEM Season 11 Oakland,Support
+Hylissang,EU Regional Qualifiers 2016,36.0,-2.5,53.0,-120.0,9.0,27.0,216.7,9.0,0.29,0,0.0,,1.27,0.3,0.3,EU Regional Finals 2016,Support
+Hylissang,EU LCS Summer Playoffs 2016,58.0,2.9,71.0,-161.0,25.0,0.0,137.7,6.0,0.23,1,0.0,,1.25,0.26,0.32,EU LCS 2016 Summer Playoffs,Support
+Hylissang,EU LCS Summer 2016,33.0,-2.9,-46.0,98.0,11.0,11.0,166.0,9.0,0.24,1,0.0,,1.23,0.26,0.29,EU LCS 2016 Summer,Support
+Hylissang,EU LCS Spring Playoffs 2016,33.0,-2.3,44.0,115.0,0.0,0.0,96.4,5.0,0.12,0,0.0,,1.39,0.31,0.37,EU LCS 2016 Spring Playoffs,Support
+Hylissang,EU LCS Spring 2016,83.0,2.8,-87.0,233.0,33.0,11.0,110.0,6.0,0.27,1,0.0,,1.17,0.24,0.35,EU LCS 2016 Spring,Support
+Hylissang,IEM San Jose 2015,100.0,5.5,-427.0,-663.0,0.0,50.0,188.9,11.0,0.3,0,0.0,,1.24,0.16,0.24,IEM Season 10 San Jose,Support
+Hylissang,EU Regional Qualifiers 2015,,,,,,,101.4,,0.16,0,,,1.1,0.12,0.09,EU Regional Finals 2015,Support
+Hylissang,EU LCS Summer Playoffs 2015,,,,,,,148.8,,0.2,0,,,1.18,0.12,0.23,EU LCS 2015 Summer Playoffs,Support
+Hylissang,EU LCS Summer 2015,,,,,,,131.6,,0.26,0,,,1.01,0.14,0.15,EU LCS 2015 Summer,Support
+Hylissang,EU LCS Spring Playoffs 2015,,,,,,,,,0.32,0,,,,,,EU LCS 2015 Spring Playoffs,Support
+Hylissang,EU LCS Spring 2015,,,,,,,,,0.3,0,,,,,,EU LCS 2015 Spring,Support
+Hylissang,IEM San Jose 2014,,,,,,,,,0.29,0,,,,,,IEM Season 10 San Jose,Support
+Nisqy,ALL,46.0,3.2,90.0,50.0,8.0,8.0,604.0,27.0,0.25,2,0.0,1.06,0.38,0.19,0.2,,Middle
+Nisqy,LEC Summer Groups 2023,100.0,23.3,611.0,703.0,0.0,0.0,779.1,37.0,0.22,2,0.0,1.29,0.39,0.19,0.31,LEC 2023 Summer Groups,Middle
+Nisqy,LEC Summer 2023,22.0,-5.8,-142.0,-240.0,11.0,11.0,526.2,22.0,0.26,0,0.0,0.96,0.38,0.19,0.14,LEC 2023 Summer Season,Middle
+Nisqy,MSI 2023,67.0,6.2,616.0,-63.0,50.0,0.0,444.1,25.0,0.26,3,0.0,0.96,0.43,0.19,0.18,MSI 2023,Middle
+Nisqy,LEC Spring Playoffs 2023,50.0,-1.8,48.0,164.0,21.0,7.0,503.9,23.0,0.35,4,0.0,1.08,0.37,0.16,0.21,LEC 2023 Spring Playoffs,Middle
+Nisqy,LEC Spring Groups 2023,57.0,0.7,-34.0,234.0,29.0,0.0,596.7,25.0,0.45,1,0.0,1.16,0.39,0.14,0.18,LEC 2023 Spring Groups,Middle
+Nisqy,LEC Spring Season 2023,70.0,3.1,-214.0,196.0,20.0,10.0,584.1,25.0,0.23,2,0.0,1.01,0.36,0.16,0.16,LEC 2023 Spring Season,Middle
+Nisqy,LEC Winter Playoffs 2023,50.0,0.7,-371.0,-143.0,25.0,8.0,594.7,24.0,0.27,4,0.0,0.89,0.36,0.14,0.12,LEC 2023 Winter Playoffs,Middle
+Nisqy,LEC Winter Groups 2023,71.0,13.7,515.0,276.0,29.0,0.0,761.4,31.0,0.36,1,0.0,1.06,0.42,0.19,0.16,LEC 2023 Winter Groups,Middle
+Nisqy,LEC Winter 2023,78.0,9.4,492.0,287.0,33.0,22.0,659.2,28.0,0.37,5,1.0,0.84,0.34,0.16,0.12,LEC 2023 Winter Groups,Middle
+Nisqy,World Championship Play-In 2022,50.0,0.0,227.0,12.0,33.0,0.0,591.9,30.0,0.31,4,0.0,0.83,0.44,0.17,0.12,Worlds 2022 Play-In,Middle
+Nisqy,LEC Summer Playoffs 2022,33.0,-11.4,-236.0,-463.0,0.0,11.0,542.1,26.0,0.28,2,0.0,0.98,0.41,0.15,0.16,LEC 2022 Summer Playoffs,Middle
+Nisqy,LEC Summer 2022,61.0,-0.7,7.0,-65.0,33.0,6.0,512.5,25.0,0.32,4,0.0,0.99,0.45,0.2,0.18,LEC 2022 Summer,Middle
+Nisqy,Worlds 2021,50.0,-5.3,-75.0,5.0,17.0,17.0,521.8,24.0,0.29,1,0.0,1.05,0.44,0.15,0.18,Worlds 2021 Main Event,Middle
+Nisqy,LEC Summer Playoffs 2021,36.0,-5.5,255.0,-92.0,41.0,5.0,517.7,25.0,0.4,7,0.0,1.02,0.44,0.17,0.12,LEC 2021 Summer Playoffs,Middle
+Nisqy,LEC Summer 2021,50.0,2.4,325.0,137.0,6.0,17.0,541.7,26.0,0.34,8,0.0,1.16,0.52,0.24,0.14,LEC 2021 Summer,Middle
+Nisqy,LEC Spring Playoffs 2021,57.0,2.9,343.0,122.0,0.0,0.0,570.6,28.0,0.26,2,0.0,1.04,0.47,0.22,0.16,LEC 2021 Spring Playoffs,Middle
+Nisqy,LEC Spring 2021,39.0,-3.6,-129.0,-199.0,17.0,6.0,455.4,23.0,0.33,3,0.0,0.93,0.49,0.21,0.11,LEC 2021 Spring,Middle
+Nisqy,LCS Summer Playoffs 2020,27.0,-10.4,-345.0,-334.0,27.0,9.0,474.9,23.0,0.27,2,0.0,0.95,0.47,0.17,0.13,LCS 2020 Summer Playoffs,Middle
+Nisqy,LCS Summer 2020,44.0,-3.0,293.0,154.0,39.0,0.0,480.3,24.0,0.36,1,0.0,1.02,0.43,0.14,0.16,LCS 2020 Summer,Middle
+Nisqy,LCS Spring Playoffs 2020,40.0,-9.3,353.0,123.0,50.0,10.0,640.9,28.0,0.48,4,0.0,0.99,0.45,0.15,0.15,LCS 2020 Spring Playoffs,Middle
+Nisqy,LCS Spring 2020,44.0,-1.2,261.0,43.0,22.0,0.0,516.3,25.0,0.36,7,0.0,1.04,0.51,0.22,0.15,LCS 2020 Spring,Middle
+Nisqy,Worlds 2019,33.0,-10.8,-463.0,-497.0,17.0,17.0,366.7,21.0,0.18,1,0.0,0.89,0.44,0.12,0.2,Worlds 2019 Main Event,Middle
+Nisqy,LCS Summer Playoffs 2019,33.0,-11.9,258.0,-256.0,11.0,11.0,418.2,21.0,0.36,8,0.0,0.94,0.39,0.14,0.24,LCS 2019 Summer Playoffs,Middle
+Nisqy,NA-EU Rift Rivals 2019,50.0,5.8,-1207.0,-193.0,25.0,25.0,434.4,27.0,0.23,2,0.0,0.82,0.39,0.14,0.19,Worlds 2019 Main Event,Middle
+Nisqy,LCS Summer 2019,42.0,-2.4,391.0,136.0,32.0,0.0,468.8,24.0,0.33,7,0.0,1.01,0.45,0.2,0.21,LCS 2019 Summer,Middle
+Nisqy,LCS Spring Playoffs 2019,60.0,0.2,342.0,54.0,0.0,0.0,494.4,28.0,0.21,0,0.0,1.09,0.44,0.27,0.14,LCS 2019 Spring Playoffs,Middle
+Nisqy,LCS Spring 2019,31.0,-5.8,-33.0,-21.0,25.0,0.0,524.5,25.0,0.31,4,0.0,0.99,0.52,0.25,0.15,LCS 2019 Spring,Middle
+Nisqy,EU LCS Regional Qualifiers 2018,40.0,-6.3,-388.0,-193.0,30.0,10.0,367.3,21.0,0.19,2,0.0,1.1,0.5,0.27,0.19,EU Regional Finals 2018,Middle
+Nisqy,EU LCS Summer Playoffs 2018,80.0,7.6,659.0,356.0,40.0,0.0,484.0,27.0,0.21,2,0.0,1.24,0.6,0.33,0.22,EU LCS 2018 Summer Playoffs,Middle
+Nisqy,NA LCS-EULCS Rift-Rivals 2018,75.0,5.5,695.0,430.0,25.0,0.0,534.5,29.0,0.21,0,0.0,1.24,0.81,0.32,0.19,EU LCS 2018 Summer,Middle
+Nisqy,EU LCS Summer 2018,39.0,-3.5,-27.0,-57.0,28.0,6.0,456.9,26.0,0.21,7,0.0,1.14,0.54,0.28,0.18,EU LCS 2018 Summer,Middle
+Nisqy,EU LCS Spring Playoffs 2018,50.0,4.3,287.0,-3.0,50.0,0.0,497.6,30.0,0.22,5,0.0,1.25,0.66,0.23,0.26,EU LCS 2018 Spring Playoffs,Middle
+Nisqy,EU LCS Spring 2018,26.0,-6.7,-210.0,-259.0,37.0,5.0,429.2,25.0,0.17,2,0.0,1.13,0.57,0.21,0.27,EU LCS 2018 Spring,Middle
+Nisqy,NA LCS Summer Playoffs 2017,0.0,-10.8,-109.0,-173.0,40.0,0.0,518.8,27.0,0.25,1,0.0,,0.5,0.14,0.28,NA LCS 2017 Summer Playoffs,Middle
+Nisqy,NA LCS Summer 2017,58.0,-1.7,-66.0,-32.0,27.0,15.0,523.3,28.0,0.21,8,0.0,,0.44,0.16,0.19,NA LCS 2017 Summer,Middle
+Nisqy,EU LCS Summer Promotion 2017,75.0,4.8,-9.0,127.0,50.0,8.0,474.4,28.0,0.27,4,0.0,,0.43,0.12,0.19,EU LCS 2017 Summer,Middle
+Nisqy,EU CS Spring 2017,47.0,-2.2,-190.0,-127.0,13.0,7.0,361.5,23.0,0.15,2,0.0,,0.44,0.13,0.16,EU LCS 2017 Spring,Middle

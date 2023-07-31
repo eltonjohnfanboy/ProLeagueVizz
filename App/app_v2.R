@@ -9,6 +9,9 @@ library(readr)
 library(plotly)
 library(bslib)
 library(forcats)
+library(ggridges)
+library(viridis)
+library(gridExtra)
 
 
 # Set the working directory
@@ -19,6 +22,7 @@ setwd("C:/Users/adars/OneDrive/Escritorio/ProjecteLolShiny/Data")
 data_lec <- read_csv("PlayerStats.csv")
 data_indiv <- read_csv("PlayerStatsGeneral.csv")
 data_traj <- read_csv("PlayersTrajectoyData.csv")
+df_early_vision_aggr <- read_csv("PlayersGolggStats.csv")
 
 # Define ui
 ui <- fluidPage(
@@ -39,7 +43,48 @@ ui <- fluidPage(
                               column(width = 8, uiOutput("player_info_box"))
                             ),
                             fluidRow(
-                              column(width = 12, plotlyOutput("plots1"))
+                              tags$div(
+                                      style = "margin-bottom: 10px;",  # Add margin between the top plot and the bottom plot
+                                      plotlyOutput("plots1")
+                                    )
+                            ),
+                            fluidRow(
+                              column(width = 12,
+                                  div(class = "early-game-container",
+                                    h3("Early Game"),
+                                    fluidRow(
+                                      column(width = 2,
+                                        div(class = "first-blood-container",
+                                        h4("First Blood Stats"), htmlOutput("first_blood_stats"),
+                                        ),
+                                        ),
+                                      column(width = 10, plotOutput("density_plots"))
+                                    ),
+                                    div(class = 'early-radioButtons-container',
+                                          radioButtons("player_option", "Display option:",
+                                                    choices = c("All players", "Position wise"),
+                                                    selected = "All players")
+                                      )
+                                    ))
+                            ),
+                            fluidRow(
+                              column(width = 12,
+                                  div(class = "agression-container",
+                                    h3("Aggression"),
+                                    fluidRow(
+                                      column(width = 2,
+                                        div(class = "aggr-data-container",
+                                        h4("Player Aggression Stats"), htmlOutput("basic_aggr_stats"),
+                                        ),
+                                        ),
+                                      column(width = 10, plotlyOutput("aggr_histograms"))
+                                    ),
+                                    div(class = 'aggr-radioButtons-container',
+                                          radioButtons("display_option_aggr", "Display option:",
+                                                    choices = c("All players", "Position wise"),
+                                                    selected = "All players")
+                                      )
+                                    ))
                             )
                           )
                   ),
@@ -64,7 +109,7 @@ server <- function(input, output, session){
   output$yearSelection <- renderUI({selectInput("year", "Select year:", choices = unique(selected_player()$Year),
                                                 width = "100%", selected = "2021")})
   
-selected_player_year <- reactive({
+  selected_player_year <- reactive({
     filter(data_lec, Player == input$player & Year == input$year) 
   })
 
@@ -75,6 +120,11 @@ selected_player_year <- reactive({
     filter(data_lec, Player == input$player & Year == input$year & Event == input$event) 
   })
   
+  dp_data_player_event <- reactive({
+    filter(df_early_vision_aggr, Player == input$player & matched_event == input$event)
+  })
+
+
   # Display player's name
   output$player_name <- renderText({
     player_data <- selected_data()
@@ -126,9 +176,7 @@ selected_player_year <- reactive({
     return(combined_plot)
 
   })
-
   
-
   # Player information
   output$player_info_box <- renderUI({
     selected_player <- selected_data()
@@ -138,8 +186,7 @@ selected_player_year <- reactive({
         class = "info-box",
         h3(paste("Player:", selected_player$"Player original name"[i])),
         p(paste("Team:", selected_player$Team[i])),
-        p(paste("Position:", selected_player$Position[i])),
-        p(paste("KDA:", selected_player$KDA[i]))
+        p(paste("Position:", selected_player$Position[i]))
       )
     })
     
@@ -150,6 +197,151 @@ selected_player_year <- reactive({
     # Return the boxes wrapped in a fluidRow
     fluidRow(box_columns)
   })
+
+
+  output$density_plots <- renderPlot({
+    # Create density plot for the chosen StatColumn
+
+    if (input$player_option == "All players") {
+      dp_df <- df_early_vision_aggr %>% filter(matched_event == input$event)
+    } else{
+      pos <- df_early_vision_aggr %>% filter(Player == input$player) %>% select(Position) %>% unique()
+      dp_df <- df_early_vision_aggr %>% filter(matched_event == input$event & Position == pull(pos))
+    }
+    dp_df$y <- 1
+
+  density_plotCSD <- ggplot(dp_df, aes(x = `CSD@15`, y = y, fill = 0.5 - abs(0.5 - after_stat(ecdf)))) +
+                  stat_density_ridges(geom = "density_ridges_gradient", calc_ecdf = TRUE) +
+                  scale_fill_viridis_c(name = "Density", direction = -1, option = "C") +
+                  xlab("CS difference at 15") +
+                  ylab("Density") +
+                  theme_ridges(grid = FALSE, center_axis_labels = TRUE) +
+                  theme(
+                        plot.title = element_text(color="white"),
+                        axis.title.x = element_text(color = "white"),
+                        axis.text.x = element_text(color = "white"),
+                        axis.title.y = element_blank(),
+                        axis.text.y = element_blank(),
+                        panel.background = element_rect(fill = "black"),     # Set panel background to black
+                        plot.background = element_rect(fill = "black"),       # Set plot background to black
+                        legend.text = element_text(color = "white"),
+                        legend.title = element_text(color = "white")
+                        )
+
+    # Get the value of the chosen player in the selected column
+    player_stat_value <- dp_data_player_event()$`CSD@15`
+
+    # Add a vertical line to indicate player's position
+    density_plotCSD <- density_plotCSD +
+      geom_vline(xintercept = player_stat_value, linetype = "dashed", color = "red") +
+      annotate("text", x = player_stat_value, y = 1, vjust = -1, label = input$player, color = "red")
+
+
+  density_plotXPD <- ggplot(dp_df, aes(x = `XPD@15`, y = y, fill = 0.5 - abs(0.5 - after_stat(ecdf)))) +
+                  stat_density_ridges(geom = "density_ridges_gradient", calc_ecdf = TRUE) +
+                  scale_fill_viridis_c(name = "Density", direction = -1, option = "C") +
+                  xlab("XP difference at 15") +
+                  ylab("Density") +
+                  theme_ridges(grid = FALSE, center_axis_labels = TRUE) +
+                  theme(
+                        plot.title = element_text(color="white"),
+                        axis.title.x = element_text(color = "white"),
+                        axis.text.x = element_text(color = "white"),
+                        axis.title.y = element_blank(),
+                        axis.text.y = element_blank(),
+                        panel.background = element_rect(fill = "black"),     # Set panel background to black
+                        plot.background = element_rect(fill = "black"),       # Set plot background to black
+                        legend.text = element_text(color = "white"),
+                        legend.title = element_text(color = "white")
+                        )
+
+    # Get the value of the chosen player in the selected column
+    player_xpd_value <- dp_data_player_event()$`XPD@15`
+
+    # Add a vertical line to indicate player's position
+    density_plotXPD <- density_plotXPD +
+      geom_vline(xintercept = player_xpd_value, linetype = "dashed", color = "red") +
+      annotate("text", x = player_xpd_value, y = 1, vjust = -1, label = input$player, color = "red")
+
+    # Plot
+    combined_density_plots <- grid.arrange(density_plotCSD, density_plotXPD, ncol=2)
+  
+    print(combined_density_plots)
+  })
+
+
+
+
+  output$aggr_histograms <- renderPlotly({
+    # Create aggresin histogram plot for the chosen StatColumn
+
+    if (input$display_option_aggr == "All players") {
+      dp_df <- df_early_vision_aggr %>% filter(matched_event == input$event)
+    } else{
+      pos <- df_early_vision_aggr %>% filter(Player == input$player) %>% select(Position) %>% unique()
+      dp_df <- df_early_vision_aggr %>% filter(matched_event == input$event & Position == pull(pos))
+    }
+    dp_df$y <- 1
+    dp_df$IsSelectedPlayer <- ifelse(dp_df$Player == input$player, "Selected", "Others")
+
+  top_10_players <- dp_df %>%
+    arrange(desc(DPM)) %>%
+    head(10)
+
+  hist_dpm <- ggplot(top_10_players, aes(x = reorder(Player, DPM), y = DPM, fill = IsSelectedPlayer)) +
+                  geom_bar(stat = "identity", show.legend = FALSE) +
+                  xlab("Player") +
+                  ylab("Damage per minute") +
+                  theme(
+                        plot.title = element_text(color="white"),
+                        axis.title.y = element_text(color = "white"),
+                        axis.text.y = element_text(color = "white"),
+                        axis.title.x = element_text(color = "white"),
+                        axis.text.x = element_text(color = "white"),
+                        panel.background = element_rect(fill = "black"),     # Set panel background to black
+                        plot.background = element_rect(fill = "black"),       # Set plot background to black
+                        panel.grid = element_blank(),
+                        legend.text = element_text(color = "white"),
+                        legend.title = element_text(color = "white")
+                        ) +
+                        coord_flip()
+  hist_dpm <- ggplotly(hist_dpm)
+
+  hist_KApm <- ggplot(top_10_players, aes(x = reorder(Player, KA_PM), y = KA_PM, fill = IsSelectedPlayer)) +
+                  geom_bar(stat = "identity", show.legend = FALSE) +
+                  xlab("Player") +
+                  ylab("K+A per minute") +
+                  theme(
+                        plot.title = element_text(color="white"),
+                        axis.title.y = element_text(color = "white"),
+                        axis.text.y = element_text(color = "white"),
+                        axis.title.x = element_text(color = "white"),
+                        axis.text.x = element_text(color = "white"),
+                        panel.background = element_rect(fill = "black"),     # Set panel background to black
+                        plot.background = element_rect(fill = "black"),       # Set plot background to black
+                        panel.grid = element_blank(),
+                        legend.text = element_text(color = "white"),
+                        legend.title = element_text(color = "white")
+                        ) +
+                        coord_flip()
+    hist_KApm <- ggplotly(hist_KApm)
+
+    combined_hist_plot <- subplot(hist_dpm, hist_KApm, titleY = TRUE, titleX = TRUE, margin = 0.05) %>%
+                          layout(showlegend = FALSE)
+
+    print(combined_hist_plot)
+  })
+
+  output$first_blood_stats <- renderText({
+    paste("First Blood particip.:", dp_data_player_event()$`FB_Participation%`, "%", "<br>",
+        "First Blood victim:", dp_data_player_event()$`FB_Victim%`, "%")
+  })
+
+  output$basic_aggr_stats <- renderText({
+    paste("KDA:", selected_data()$KDA, "<br>",
+        "Solo kills:", dp_data_player_event()$SoloKills)
+  })
+
 
 }
 
