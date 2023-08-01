@@ -1,27 +1,55 @@
-# Read libraries
 library(shiny)
-library(shinythemes)
-library(reshape2)
-library(ggplot2)
-library(lubridate)
-library(dplyr)
-library(readr)
-library(plotly)
-library(bslib)
-library(forcats)
-library(ggridges)
-library(viridis)
-library(gridExtra)
+library(shinyjs)
 
+ui <- fluidPage(
+  useShinyjs(),
+  tags$head(
+    tags$style(HTML("
+      .expand-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+      }
+      .expanded {
+        max-height: 500px; /* Adjust this value to control the size of the expanded content */
+        margin: 20px 0;
+      }
+      #expand_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      #expand_button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        outline: none;
+      }
+    "))
+  ),
+  div(
+    id = "expand_wrapper",
+    div(
+      id = "expand_button",
+      "Click to Expand"
+    ),
+    div(
+      class = "expand-content",
+      id = "expand_content",
+      p("This is the hidden content that will be expanded when you click the button.")
+    )
+  )
+)
 
-setwd("C:/Users/adars/OneDrive/Escritorio/ProjecteLolShiny/Data")
-df_early_vision_aggr <- read_csv("PlayersGolggStats.csv")
-
-if ("All players" == "All players2") {
-  dp_df <- df_early_vision_aggr %>% filter(matched_event == "MSI 2021")
-} else{
-  pos <- df_early_vision_aggr %>% filter(Player == "Elyoya") %>% select(Position) %>% unique()
-  print(pos)
-  dp_df <- df_early_vision_aggr %>% filter(matched_event == "MSI 2023" & Position == pull(pos))
+server <- function(input, output) {
+  observeEvent(input$expand_button, {
+    runjs("$('.expand-content').toggleClass('expanded');")
+  })
 }
-dp_df$y <- 1
+
+shinyApp(ui, server)

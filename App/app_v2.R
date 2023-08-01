@@ -12,7 +12,7 @@ library(forcats)
 library(ggridges)
 library(viridis)
 library(gridExtra)
-
+library(shinyjs)
 
 # Set the working directory
 setwd("C:/Users/adars/OneDrive/Escritorio/ProjecteLolShiny/Data")
@@ -26,6 +26,7 @@ df_early_vision_aggr <- read_csv("PlayersGolggStats.csv")
 
 # Define ui
 ui <- fluidPage(
+                useShinyjs(),
                 includeCSS("C:/Users/adars/OneDrive/Escritorio/ProjecteLolShiny/www/style.css"),
                 theme = shinythemes::shinytheme("slate"),
                 navbarPage(
@@ -48,7 +49,8 @@ ui <- fluidPage(
                                       plotlyOutput("plots1")
                                     )
                             ),
-                            fluidRow(
+                            actionButton("btn_section1", "Early game", style = "width: 100%;"),
+                            fluidRow(id = "content_section1", style = "display: none;",
                               column(width = 12,
                                   div(class = "early-game-container",
                                     h3("Early Game"),
@@ -67,7 +69,8 @@ ui <- fluidPage(
                                       )
                                     ))
                             ),
-                            fluidRow(
+                            actionButton("btn_section2", "Aggression", style = "width: 100%;"),
+                            fluidRow(id = "content_section2", style = "display: none;",
                               column(width = 12,
                                   div(class = "agression-container",
                                     h3("Aggression"),
@@ -81,6 +84,21 @@ ui <- fluidPage(
                                     ),
                                     div(class = 'aggr-radioButtons-container',
                                           radioButtons("display_option_aggr", "Display option:",
+                                                    choices = c("All players", "Position wise"),
+                                                    selected = "All players")
+                                      )
+                                    ))
+                            ),
+                            actionButton("btn_section3", "Efficiency", style = "width: 100%;"),
+                            fluidRow(id = "content_section3", style = "display: none;",
+                              column(width = 12,
+                                  div(class = "agression-container",
+                                    h3("Efficiency"),
+                                    fluidRow(
+                                      column(width = 12, plotlyOutput("eff_scatter"))
+                                    ),
+                                    div(class = 'aggr-radioButtons-container',
+                                          radioButtons("display_option_eff", "Display option:",
                                                     choices = c("All players", "Position wise"),
                                                     selected = "All players")
                                       )
@@ -332,6 +350,62 @@ server <- function(input, output, session){
     print(combined_hist_plot)
   })
 
+
+
+  output$eff_scatter <- renderPlotly({
+    # Create aggresin histogram plot for the chosen StatColumn
+
+    if (input$display_option_eff == "All players") {
+      dp_df <- df_early_vision_aggr %>% filter(matched_event == input$event)
+      data_event <- data_indiv %>% filter(Event == input$event & Year == input$year)
+    } else{
+      pos <- df_early_vision_aggr %>% filter(Player == input$player) %>% select(Position) %>% unique()
+      dp_df <- df_early_vision_aggr %>% filter(matched_event == input$event & Position == pull(pos))
+      data_event <- data_indiv %>% filter(Event == input$event & Year == input$year & Position == pull(pos))
+    }
+    data_aux <- data_indiv %>% filter(Player == input$player & Event == input$event & Year == input$year)
+
+    p1 <- ggplot(data_event, aes(x = KP, y = `DTH%`)) + 
+                geom_point(data = data_aux, color = "red", size = 3, aes(text = paste("Player: ", Player, "<br>", "Position: ", Position))) +
+                geom_point(data = data_event[data_event$Player != input$player, ], color = "gray", size = 3, aes(text = paste("Player: ", Player, "<br>", "Position: ", Position))) +
+                #geom_text(data = data_aux, aes(label = Player), hjust = 0, vjust = 10, size = 4, color = "red") +
+                labs(title = "", x = "Kill participation (%)", y = "Team's death participation (%)") + 
+                theme_dark() +
+                theme(
+                plot.title = element_text(color="white"),
+                axis.title.x = element_text(color = "white"),
+                axis.title.y = element_text(color = "white"),
+                panel.background = element_rect(fill = "black"),     # Set panel background to black
+                plot.background = element_rect(fill = "black")       # Set plot background to black
+                )
+
+    p1 <- ggplotly(p1)
+
+    p2 <- ggplot(data_event, aes(x = `GOLD%`, y = `DMG%`)) + 
+                geom_point(data = data_aux, color = "red", size = 3, aes(text = paste("Player: ", Player, "<br>", "Position: ", Position))) +
+                geom_point(data = data_event[data_event$Player != input$player, ], color = "gray", size = 3, aes(text = paste("Player: ", Player, "<br>", "Position: ", Position))) +
+                geom_smooth(method = NULL, level = 0.9) +
+                #geom_text(data = data_aux, aes(label = Player), hjust = 0, vjust = 10, size = 4, color = "red") +
+                labs(title = "", x = "Gold share (%)", y = "Damage share (%)") + 
+                theme_dark() +
+                theme(
+                plot.title = element_text(color="white"),
+                axis.title.x = element_text(color = "white"),
+                axis.title.y = element_text(color = "white"),
+                panel.background = element_rect(fill = "black"),     # Set panel background to black
+                plot.background = element_rect(fill = "black")       # Set plot background to black
+                )
+
+    p2 <- ggplotly(p2)
+
+    combined_plot <- subplot(p1, p2, titleY = TRUE, titleX = TRUE, margin = 0.05)
+    
+    return(combined_plot)
+
+  })
+
+
+
   output$first_blood_stats <- renderText({
     paste("First Blood particip.:", dp_data_player_event()$`FB_Participation%`, "%", "<br>",
         "First Blood victim:", dp_data_player_event()$`FB_Victim%`, "%")
@@ -340,6 +414,18 @@ server <- function(input, output, session){
   output$basic_aggr_stats <- renderText({
     paste("KDA:", selected_data()$KDA, "<br>",
         "Solo kills:", dp_data_player_event()$SoloKills)
+  })
+
+  observeEvent(input$btn_section1, {
+    shinyjs::toggle("content_section1")
+  })
+  
+  observeEvent(input$btn_section2, {
+    shinyjs::toggle("content_section2")
+  })
+
+  observeEvent(input$btn_section3, {
+    shinyjs::toggle("content_section3")
   })
 
 
