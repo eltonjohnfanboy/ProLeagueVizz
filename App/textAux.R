@@ -31,7 +31,7 @@ server <- function(input, output, session) {
       nodes_subset$color <- ifelse(nodes_subset$id %in% highlighted_nodes, "red", "blue")
       
       visNetworkProxy("network") %>%
-        visUpdateNodes(nodes_subset)
+          visUpdateNodes(nodes_subset)
     }
   })
 }

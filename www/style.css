@@ -58,6 +58,21 @@
     margin-top: 10px;
   }
 
+  .cpool-container {
+    background-color: black;    /* Set the background color to a light gray */
+    border: 1px solid #999999;    /* Add a subtle border around the section */
+    border-radius: 10px;          /* Set border radius for slightly rounded corners */
+    padding: 15px;                /* Add padding to create space between content and border */
+    box-shadow: 2px 2px 5px #888888;  /* Add a subtle box-shadow for an elegant effect */
+    position: relative;
+    margin-top: 10px;
+    height: 650px;
+  }
+
+  .vis-network{
+    height: 800px;
+  }
+
   .aggr-data-container {
     background-color: rgba(43, 40, 40, 0.7);  /* Set the background to a light black */
     padding: 10px;  /* Add padding inside the div */
@@ -80,7 +95,8 @@
 
 #btn_section1,
 #btn_section2,
-#btn_section3 {
+#btn_section3,
+#btn_section4 {
   --b: 3px;   /* border thickness */
   --s: .45em; /* size of the corner */
   --color: #6f7277;
@@ -139,10 +155,22 @@
   color: #fff;
 }
 
+#btn_section4:hover,
+#btn_section4:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+#btn_section4:active {
+  background: var(--color);
+  color: #fff;
+}
 
 #btn_section1,
 #btn_section2,
-#btn_section3 {
+#btn_section3,
+#btn_section4 {
   /* Your existing CSS styles for the buttons */
 
   /* Add margin to create space between the buttons */

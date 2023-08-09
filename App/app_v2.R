@@ -14,6 +14,7 @@ library(viridis)
 library(gridExtra)
 library(shinyjs)
 library(DT)
+library(visNetwork)
 
 # Set the working directory
 setwd("C:/Users/adars/OneDrive/Escritorio/ProjecteLolShiny/Data")
@@ -25,6 +26,57 @@ data_indiv <- read_csv("PlayerStatsGeneral.csv")
 data_traj <- read_csv("PlayersTrajectoyData.csv")
 df_early_vision_aggr <- read_csv("PlayersGolggStats.csv")
 df_trophies <- read_csv("PlayerTrophies.csv")
+data_champ_sim <- read_csv("finalChampSimilarity.csv")
+champ_pos <- read_csv("champPosition.csv")
+cpool_players <- read_csv("PlayersChampPool.csv")
+
+
+
+# Data processing
+nodes <- as.data.frame(data_champ_sim$Champion, data_champ_sim$Champion)
+colnames(nodes) <- c("label")
+nodes$id <- nodes$label
+
+champion_names <- data_champ_sim$Champion
+
+# Initialize an empty list to store edges
+edges <- list()
+
+# Iterate through each row of the matrix to create edges
+for (i in 1:nrow(data_champ_sim)) {
+  from_champion <- champion_names[i]
+  
+  # Iterate through each champion column
+  for (j in 2:ncol(data_champ_sim)) {
+    to_champion <- colnames(data_champ_sim)[j]
+    width_value <- data_champ_sim[i, j]
+    
+    # Create an edge and append to the list
+    edge <- c(from_champion, to_champion, width_value)
+    edges <- c(edges, list(edge))
+  }
+}
+
+# Convert the list of edges into a data frame
+edges_df <- do.call(rbind, edges)
+
+# Set column names
+colnames(edges_df) <- c("from", "to", "width")
+
+#Create graph for Louvain
+edges_df <- as.data.frame(edges_df)
+
+nodes <- left_join(nodes, champ_pos, by = "label")
+colnames(nodes)[3] <- "group"
+
+# Create a visNetwork graph
+filtered_edges <- edges_df[edges_df$width > 0.85, ]
+filtered_edges$from <- as.character(filtered_edges$from)
+filtered_edges$to <- as.character(filtered_edges$to)
+filtered_edges <- filtered_edges[filtered_edges$from != filtered_edges$to, , drop = FALSE]
+filtered_edges$title <- paste0(filtered_edges$from, " to ",filtered_edges$to, "<br> Similarity : ", round(as.numeric(filtered_edges$width), 2))
+
+
 
 # Define ui
 ui <- fluidPage(
@@ -120,6 +172,21 @@ ui <- fluidPage(
                                                     selected = "All players")
                                       )
                                     ))
+                            ),
+                            actionButton("btn_section4", "Champion pool", style = "width: 100%;"),
+                            fluidRow(id = "content_section4", style = "display: none;",
+                              column(width = 12,
+                                  div(class = "cpool-container",
+                                    h3("Champion pool graph"),
+                                    fluidRow(
+                                      column(width = 10, visNetworkOutput("cpool_graph"))
+                                    ),
+                                    div(class = 'aggr-radioButtons-container',
+                                          radioButtons("display_option_cpool", "Display option:",
+                                                    choices = c("Selected tournament", "All history"),
+                                                    selected = "Selected tournament")
+                                      )
+                                    ))
                             )
                           )
                   ),
@@ -153,6 +220,14 @@ server <- function(input, output, session){
   
   dp_data_player_event <- reactive({
     filter(df_early_vision_aggr, Player == input$player & matched_event == input$event)
+  })
+
+  nodes_to_highlight <- reactive({
+  if (input$display_option_cpool == "Selected tournament") {
+    cpool_players %>% filter(Player == input$player & Event == input$event) %>% select(Champion)
+  } else{
+    cpool_players %>% filter(Player == input$player & Event == "ALL") %>% select(Champion)
+  }
   })
 
 
@@ -415,6 +490,32 @@ server <- function(input, output, session){
 
   })
 
+output$cpool_graph <- renderVisNetwork({
+
+    highlighted_nodes <- nodes_to_highlight()
+    aux_nodes <- nodes
+    aux_nodes <- aux_nodes %>%
+      mutate(size = ifelse(label %in% highlighted_nodes, 99, 55))
+    print(class(nodes))
+    print(class(aux_nodes))
+    print(class(nodes_to_highlight()))
+    print("-----")
+    print(aux_nodes$size)
+    print(nodes_to_highlight())
+
+    p1 <- visNetwork(nodes, filtered_edges, width = "100%") %>%
+          visOptions(highlightNearest = TRUE) %>%
+          visNodes(font = list(color = "white", size = 20)) %>%
+          addFontAwesome() %>%
+          visLegend(width = 0.1, position = "left", main = "") %>%
+          visInteraction(hover = TRUE, tooltipDelay = 100, hideEdgesOnDrag = TRUE, tooltipStyle = 'position: fixed;visibility:hidden;padding: 5px;white-space: nowrap;
+          font-color:black;background-color: black;') %>%
+          visOptions(height = "400px")
+
+    return(p1)
+
+  })
+
 
 
   output$first_blood_stats <- renderText({
@@ -437,6 +538,10 @@ server <- function(input, output, session){
 
   observeEvent(input$btn_section3, {
     shinyjs::toggle("content_section3")
+  })
+
+  observeEvent(input$btn_section4, {
+    shinyjs::toggle("content_section4")
   })
 
 }
