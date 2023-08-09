@@ -13,6 +13,7 @@ library(ggridges)
 library(viridis)
 library(gridExtra)
 library(shinyjs)
+library(DT)
 
 # Set the working directory
 setwd("C:/Users/adars/OneDrive/Escritorio/ProjecteLolShiny/Data")
@@ -23,6 +24,7 @@ data_lec <- read_csv("PlayerStats.csv")
 data_indiv <- read_csv("PlayerStatsGeneral.csv")
 data_traj <- read_csv("PlayersTrajectoyData.csv")
 df_early_vision_aggr <- read_csv("PlayersGolggStats.csv")
+df_trophies <- read_csv("PlayerTrophies.csv")
 
 # Define ui
 ui <- fluidPage(
@@ -44,10 +46,25 @@ ui <- fluidPage(
                               column(width = 8, uiOutput("player_info_box"))
                             ),
                             fluidRow(
+                              column(width = 6,
                               tags$div(
                                       style = "margin-bottom: 10px;",  # Add margin between the top plot and the bottom plot
                                       plotlyOutput("plots1")
                                     )
+                              ),
+                              column(width = 6,
+                                tags$style(HTML("
+                                  .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_paginate,
+                                  .dataTables_wrapper .dataTables_filter input, .dataTables_wrapper .dataTables_length select {
+                                    color: white;
+                                  }
+                                  .dataTables_wrapper thead th {
+                                    color: white;
+                                    background-color: #6a6e70; /* Dark gray background for column headers */
+                                  }
+                                ")),
+                                DTOutput("table")
+                              )
                             ),
                             actionButton("btn_section1", "Early game", style = "width: 100%;"),
                             fluidRow(id = "content_section1", style = "display: none;",
@@ -114,10 +131,6 @@ ui <- fluidPage(
 
 
 
-
-
-
-
 server <- function(input, output, session){
   
   selected_player <- reactive({
@@ -170,29 +183,27 @@ server <- function(input, output, session){
                 plot.background = element_rect(fill = "black")       # Set plot background to black
               )
     p1 <- ggplotly(plot_traj)
+    return(p1)
+  })
 
-    data_event <- data_indiv %>% filter(Event == input$event & Year == input$year)
-    data_aux <- data_indiv %>% filter(Player == input$player & Event == input$event & Year == input$year)
-    p <- ggplot(data_event, aes(x = KP, y = `DTH%`)) + 
-                geom_point(data = data_aux, color = "red", size = 3, aes(text = paste("Player: ", Player, "<br>", "Position: ", Position))) +
-                geom_point(data = data_event[data_event$Player != input$player, ], color = "gray", size = 3, aes(text = paste("Player: ", Player, "<br>", "Position: ", Position))) +
-                #geom_text(data = data_aux, aes(label = Player), hjust = 0, vjust = 10, size = 4, color = "red") +
-                labs(title = "", x = "Kill participation (%)", y = "Team's death participation (%)") + 
-                theme_dark() +
-                theme(
-                plot.title = element_text(color="white"),
-                axis.title.x = element_text(color = "white"),
-                axis.title.y = element_text(color = "white"),
-                panel.background = element_rect(fill = "black"),     # Set panel background to black
-                plot.background = element_rect(fill = "black")       # Set plot background to black
-                )
+  output$table <- renderDataTable({
+    data_aux <- df_trophies %>% filter(Name == input$player & Year == input$year)
+    df_table <- data_aux[c("Tournament", "Tier", "Position", "Date")]
 
-    p2 <- ggplotly(p)
-
-    combined_plot <- subplot(p1, p2, titleY = TRUE, titleX = TRUE, margin = 0.05)
+    background <- "value == '1st' ? 'gold' : value != 'else' ? '' : ''"
+    text_color <- "white"
+    class(background) <- "JS_EVAL"
     
-    return(combined_plot)
-
+    datatable(
+      df_table, 
+      options = list(pageLength = 10),
+      rownames = FALSE
+    ) %>% formatStyle(
+      'Position',
+      target = 'row',
+      backgroundColor = background,
+      color = text_color
+    )
   })
   
   # Player information
@@ -427,7 +438,6 @@ server <- function(input, output, session){
   observeEvent(input$btn_section3, {
     shinyjs::toggle("content_section3")
   })
-
 
 }
 
