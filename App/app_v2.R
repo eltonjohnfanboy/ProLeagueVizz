@@ -245,7 +245,7 @@ server <- function(input, output, session){
                 geom_line(size = 6, colour = "#6a6e70") +
                 xlab(NULL) + 
                 ylab(NULL) +
-                labs(title = "") +
+                labs(title = "Player's trajectory") +
                 theme_dark() +       # Use a minimalistic theme
                 theme(
                 plot.title = element_text(color="white"),
@@ -465,7 +465,7 @@ server <- function(input, output, session){
     p2 <- ggplot(data_event, aes(x = `GOLD%`, y = `DMG%`)) + 
                 geom_point(data = data_aux, color = "red", size = 3, aes(text = paste("Player: ", Player, "<br>", "Position: ", Position))) +
                 geom_point(data = data_event[data_event$Player != input$player, ], color = "gray", size = 3, aes(text = paste("Player: ", Player, "<br>", "Position: ", Position))) +
-                geom_smooth(method = NULL, level = 0.9) +
+                #geom_smooth(method = NULL, level = 0.9) +
                 #geom_text(data = data_aux, aes(label = Player), hjust = 0, vjust = 10, size = 4, color = "red") +
                 labs(title = "", x = "Gold share (%)", y = "Damage share (%)") + 
                 theme_dark() +
