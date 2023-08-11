@@ -6,3 +6,4 @@ data/*.json
 *.log
 
 # Ignore a specific file
+image_*.jpg

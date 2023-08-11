@@ -66,7 +66,7 @@
     box-shadow: 2px 2px 5px #888888;  /* Add a subtle box-shadow for an elegant effect */
     position: relative;
     margin-top: 10px;
-    height: 650px;
+    height: 700px;
   }
 
   .vis-network{
@@ -91,6 +91,30 @@
     position: absolute;
     top:0px;
     right:5px;
+  }
+
+  .cpool-bubble{
+    position: absolute;
+    margin-top: 100px;
+  }
+
+  .cpool-expl-box{
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 6px 12px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 13px;
+    color: rgb(247, 248, 248);
+    height: 100px;
+    appearance: none;
+    transition: border 0.15s ease 0s;
+    :focus{
+        outline: none;
+        box-shadow: none;
+        border-color: rgb(100, 153, 255);
+    }
   }
 
 #btn_section1,

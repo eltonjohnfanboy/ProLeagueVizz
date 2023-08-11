@@ -95,7 +95,8 @@ ui <- fluidPage(
                                       uiOutput("yearSelection"),
                                       uiOutput("eventSelection")
                               ),
-                              column(width = 8, uiOutput("player_info_box"))
+                              column(width = 4, uiOutput("player_info_box")),
+                              column(width = 4, imageOutput("playerImage"))
                             ),
                             fluidRow(
                               column(width = 6,
@@ -177,9 +178,11 @@ ui <- fluidPage(
                             fluidRow(id = "content_section4", style = "display: none;",
                               column(width = 12,
                                   div(class = "cpool-container",
-                                    h3("Champion pool graph"),
+                                    h3("Champion pool"),
                                     fluidRow(
-                                      column(width = 10, visNetworkOutput("cpool_graph"))
+                                      column(width = 6, visNetworkOutput("cpool_graph")),
+                                      column(width = 6, div(class = "cpool-bubble", plotlyOutput("bubbleCpool"),
+                                                            div(class = "cpool-expl-box", "To the right, a graph emerges. Bigger nodes denote champions player by the chosen player, whether from the selected tournament or across all matches. This similarity graph interconnects champions, unveiling playstyle patterns and potential selections. Currently the graph's affiliations stem from a content-based filtering recommendation system, it aspires to evolve into a more refined recommendation system.")))
                                     ),
                                     div(class = 'aggr-radioButtons-container',
                                           radioButtons("display_option_cpool", "Display option:",
@@ -220,14 +223,6 @@ server <- function(input, output, session){
   
   dp_data_player_event <- reactive({
     filter(df_early_vision_aggr, Player == input$player & matched_event == input$event)
-  })
-
-  nodes_to_highlight <- reactive({
-  if (input$display_option_cpool == "Selected tournament") {
-    cpool_players %>% filter(Player == input$player & Event == input$event) %>% select(Champion)
-  } else{
-    cpool_players %>% filter(Player == input$player & Event == "ALL") %>% select(Champion)
-  }
   })
 
 
@@ -280,7 +275,7 @@ server <- function(input, output, session){
       color = text_color
     )
   })
-  
+
   # Player information
   output$player_info_box <- renderUI({
     selected_player <- selected_data()
@@ -295,7 +290,7 @@ server <- function(input, output, session){
     })
     
     box_columns <- lapply(info_boxes, function(box) {
-      column(width = 4, box)  # Adjust the width as needed
+      column(width = 8, box)  # Adjust the width as needed
     })
     
     # Return the boxes wrapped in a fluidRow
@@ -490,33 +485,82 @@ server <- function(input, output, session){
 
   })
 
-output$cpool_graph <- renderVisNetwork({
-
-    highlighted_nodes <- nodes_to_highlight()
+  # champion pool graph
+  output$cpool_graph <- renderVisNetwork({
+    
+    highlighted_nodes <- 
+      if (input$display_option_cpool == "Selected tournament") {
+        cpool_players %>% filter(Player == input$player & matched_event == input$event) %>% pull(Champion)
+      } else{
+        cpool_players %>% filter(Player == input$player & matched_event == "ALL") %>% pull(Champion)
+      }
+  
     aux_nodes <- nodes
     aux_nodes <- aux_nodes %>%
-      mutate(size = ifelse(label %in% highlighted_nodes, 99, 55))
-    print(class(nodes))
-    print(class(aux_nodes))
-    print(class(nodes_to_highlight()))
-    print("-----")
-    print(aux_nodes$size)
-    print(nodes_to_highlight())
+      mutate(size = ifelse(label %in% highlighted_nodes, 75, 25)
+    )
 
-    p1 <- visNetwork(nodes, filtered_edges, width = "100%") %>%
-          visOptions(highlightNearest = TRUE) %>%
-          visNodes(font = list(color = "white", size = 20)) %>%
+    p1 <- visNetwork(aux_nodes, filtered_edges, width = "100%") %>%
+          visNodes(
+            font = list(color = "white", size = 20)
+            ) %>%
           addFontAwesome() %>%
           visLegend(width = 0.1, position = "left", main = "") %>%
-          visInteraction(hover = TRUE, tooltipDelay = 100, hideEdgesOnDrag = TRUE, tooltipStyle = 'position: fixed;visibility:hidden;padding: 5px;white-space: nowrap;
-          font-color:black;background-color: black;') %>%
-          visOptions(height = "400px")
+          visInteraction(hover = TRUE, tooltipDelay = 100, hideEdgesOnDrag = TRUE, tooltipStyle = 'position: fixed;visibility:hidden;padding: 5px;white-space: nowrap;font-color:black;background-color: black;') %>%
+          visOptions(width = "585", height = "500px", highlightNearest = TRUE)
 
     return(p1)
 
   })
+  
+  # champion pool bubble
+  output$bubbleCpool <- renderPlotly({
+    
+    bubble_data <- 
+      if (input$display_option_cpool == "Selected tournament") {
+        cpool_players %>% filter(Player == input$player & matched_event == input$event)
+      } else{
+        cpool_players %>% filter(Player == input$player & matched_event == "ALL")
+      }
+    
+    champ_pos$Champion <- champ_pos$label
+    bubble_data <- left_join(bubble_data, champ_pos, by = "Champion")
+    position_colors <- c(Top = "#4da2c4", Jungle = "#41ee41", Middle = "yellow", Bottom = "#c05cff", Support = "#f35e5e")
+    
+    
+    bubbleChart <- plot_ly(bubble_data, x = ~`Nb games`, y = ~`Win Rate(%)`,
+                           size = ~KDA, sizes = c(70, 500),
+                           color = ~Position,
+                           colors = position_colors,
+                           marker = list(opacity = 0.45),
+                           hoverinfo = 'text',
+                           text = ~paste('Champion:', Champion, '<br>KDA:', KDA, '<br>Games player:', `Nb games`, '<br>Win rate (%):', `Win Rate(%)`)) %>%
+                  layout(
+                    title = "Players Champion Performance",
+                    xaxis = list(title = "Number of Games"),
+                    yaxis = list(title = "Winrate"),
+                    showlegend = TRUE, # Show the legend for color
+                    hovermode = "closest",
+                    font = list(color = "white"),
+                    paper_bgcolor = "black",
+                    plot_bgcolor = "black",
+                    titlefont = list(color = "white"),
+                    xaxis_title_font = list(color = "white"),
+                    yaxis_title_font = list(color = "white")
+                  )
+    
+    # Style the layout
+    p1 <- bubbleChart %>% config(displayModeBar = FALSE)
+    return(p1)
+  })
 
-
+  output$playerImage <- renderImage({
+    image_directory <- "C:/Users/adars/OneDrive/Escritorio/ProjecteLolShiny/PlayerImages"
+    img_path <- file.path(image_directory, paste0("image_", input$player, ".jpg"))
+    list(src = img_path,
+         alt = input$player,
+         width = "200")
+  }, deleteFile = FALSE)
 
   output$first_blood_stats <- renderText({
     paste("First Blood particip.:", dp_data_player_event()$`FB_Participation%`, "%", "<br>",
