@@ -4,7 +4,7 @@
 
 An interactive Shiny app for analyzing professional League of Legends data. The app is a work in progress and currently offers insights into player statistics for a subset of LEC players.
 
-## Table of Contents
+# Table of Contents
 
 - [Introduction](#introduction)
 - [Features](#features)
@@ -212,13 +212,15 @@ We extend our sincere gratitude to the following data sources, libraries, and re
 
 - [League of Legends Fandom](https://lol.fandom.com/): A community-driven platform that offers a wealth of information on League of Legends tournaments, players, and teams.
 
-- [OraclesElixir](https://oracleselixir.com/) 
-
-- [Factor.gg](https://factor.gg/)
-
 - [RIOT API](https://developer.riotgames.com/): The official API provided by Riot Games, enabling us to access essential League of Legends data and enrich our analyses.
 
 - [R Libraries](https://cran.r-project.org/): The vibrant R community and its extensive collection of libraries have empowered us to process, visualize, and analyze data effectively within ProLeagueVizz.
+
+- [Selenium](https://www.selenium.dev/): A powerful tool for web scraping and automation, allowing us to gather data from online sources and enhance our analysis capabilities.
+
+- [OraclesElixir](https://oracleselixir.com/) 
+
+- [Factor.gg](https://factor.gg/)
 
 We also express our appreciation to the countless League of Legends enthusiasts, developers, and contributors who have shared their insights, ideas, and knowledge, fostering a collaborative environment within the League of Legends community.
 
