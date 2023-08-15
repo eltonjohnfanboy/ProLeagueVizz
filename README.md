@@ -202,7 +202,35 @@ That's it! With ProLeagueVizz, you have a powerful tool at your fingertips to ex
 
 ## Roadmap
 
-Explore the future development plans for ProLeagueVizz. Mention your aspiration to scale the app with more comprehensive data from various leagues once additional computational resources become available.
+Our journey with ProLeagueVizz is just beginning, and we have exciting plans for its future development. While the app is currently in its early stages, we're committed to continually enhancing its capabilities and providing even more valuable insights to League of Legends enthusiasts and data analysts.
+
+### Short-Term Goals
+
+In the near future, we're focusing on the following enhancements:
+
+1. **Expanded Player and Team Coverage:** We aim to broaden our data coverage to include a wider range of players and teams, providing a more comprehensive view of the League of Legends competitive landscape.
+
+2. **Team Statistics:** The upcoming "Team Statistics" section will offer insights into team dynamics, strategies, and trends. We'll delve into aspects such as early game dominance, objective control, and map presence.
+
+3. **Enhanced User Experience:** We're dedicated to refining the user interface, improving navigation, and ensuring a smooth and intuitive experience for all users.
+
+### Medium-Term Goals
+
+Looking further ahead, we're planning the following developments:
+
+1. **Team Comparison:** The "Team Comparison" section will allow users to directly compare teams based on various metrics, playstyles, and strategies.
+
+2. **Advanced Metrics and Insights:** We'll introduce more advanced metrics that provide deeper insights into player and team performance, shedding light on key contributors to success.
+
+3. **Interactive Insights:** We're exploring interactive visualizations and features that empower users to perform custom analyses and gain personalized insights.
+
+### Long-Term Vision
+
+In the long term, our vision for ProLeagueVizz includes:
+
+1. **Global Coverage:** We aspire to cover major regions and leagues across the world, offering a truly comprehensive analysis of the League of Legends competitive scene.
+
+2. **Machine Learning Integration:** We plan to integrate machine learning techniques to provide predictive analysis, identify emerging trends in playstyles, etc.
 
 ## Contributing
 
