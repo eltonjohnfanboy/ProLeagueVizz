@@ -170,7 +170,7 @@ Follow these steps to install and set up ProLeagueVizz on your local machine:
 
 1. Clone this repository to your local machine using Git or download the ZIP file and extract it.
 
-2. Open the `global.R` file located in the project root directory.
+2. Open the `global.R` file inside the R folder located in the project root directory.
 
 3. Locate the following line in `global.R`:
    
