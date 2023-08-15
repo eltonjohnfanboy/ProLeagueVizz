@@ -141,13 +141,41 @@ We recommend using the latest versions of R and the specified packages to ensure
 
 With these prerequisites met, you're ready to explore the insights and analyses that ProLeagueVizz has to offer.
 
-### Installation
+## Installation
 
-Provide step-by-step instructions to install and set up ProLeagueVizz on a local machine.
+Follow these steps to install and set up ProLeagueVizz on your local machine:
+
+1. Clone this repository to your local machine using Git or download the ZIP file and extract it.
+
+2. Open the `global.R` file located in the project root directory.
+
+3. Locate the following line in `global.R`:
+   
+   ```r
+   # Set the working directory (CHANGE PATH)
+   setwd("C:/Users/adars/OneDrive/Escritorio/ProjecteLolShiny")
+
+4. Replace the path in setwd with the path to the root directory of the cloned repository on your local machine. This step is crucial for ensuring that your app's paths are correctly set and resources are loaded.
+
+5. Open `app.R` in R or your preferred R development environment (e.g., RStudio, Visual Studio Code).
+
+6. To launch the app, execute the `app.R` script in R. This will start the app, and you will see the URL where you can access it (usually http://127.0.0.1:port).
 
 ## Usage
 
-[Provide instructions on how to use ProLeagueVizz and highlight its capabilities. You can include screenshots or GIFs to demonstrate the app's functionality.]
+Using ProLeagueVizz is straightforward:
+
+1. Ensure you have followed the installation instructions and the app is running on your local machine.
+
+2. Access the app by navigating to the URL provided when you started the app.
+
+3. Explore the app's sections to analyze professional League of Legends data. Navigate through the "Player Statistics" section to gain insights into individual players' performance.
+
+4. Interact with the user interface to select different players, tournaments, and statistics for analysis.
+
+5. [IN FUTURE] Take advantage of the upcoming "Team Statistics" and "Team Comparison" sections to delve deeper into team-based analysis and comparisons.
+
+That's it! With ProLeagueVizz, you have a powerful tool at your fingertips to explore and gain insights from professional League of Legends data. Feel free to experiment, analyze, and enjoy the app's features.
 
 ## Roadmap
 
@@ -155,15 +183,46 @@ Explore the future development plans for ProLeagueVizz. Mention your aspiration 
 
 ## Contributing
 
-[Specify how others can contribute to the project, whether it's through bug reports, feature requests, or code contributions. Provide guidelines for pull requests and contributions.]
+We welcome contributions to ProLeagueVizz, and your help can make a significant impact on the growth of this project! As we continue to refine and expand the app's capabilities, your involvement can play a crucial role in shaping its future.
 
-## License
+### How to Contribute
 
-This project is licensed under the [MIT License](LICENSE).
+Whether you're a developer, a League of Legends enthusiast, or simply excited about data analysis, there are several ways you can contribute:
+
+- **Bug Reports:** If you encounter any bugs, glitches, or unexpected behavior while using ProLeagueVizz, please let us know! Open an issue in the repository, providing detailed steps to reproduce the problem. Your feedback is invaluable in improving the app's quality.
+
+- **Feature Requests:** Have an idea for a new feature, enhancement, or improvement? Share it with us by opening an issue! We're eager to hear your suggestions and consider ways to make ProLeagueVizz even more valuable.
+
+- **Code Contributions:** If you're comfortable with R and Shiny development, you can contribute directly to the codebase. Fork this repository, make your changes, and submit a pull request. We'll review your contribution and work together to integrate it into the project.
+
+### Early Stage of Development
+
+It's important to note that ProLeagueVizz is still in its early stages of development. The current version focuses on a subset of LEC (League of Legends EMEA Championship) players, and there might be bugs or areas that need refinement. As a personal project, it's a work in progress, and your understanding and patience are greatly appreciated.
+
+Your support and engagement can help ProLeagueVizz evolve into a powerful resource for League of Legends enthusiasts and data analysts alike. Together, we can uncover new insights, enhance functionality, and contribute to the vibrant community around professional League of Legends.
+
+Thank you for considering contributing to ProLeagueVizz, and we look forward to collaborating with you on this exciting journey!
+
 
 ## Acknowledgements
 
-[Give credit to any data sources, libraries, or resources that you've used in the project.]
+We extend our sincere gratitude to the following data sources, libraries, and resources that have played a significant role in the development of ProLeagueVizz:
+
+- [Gol.gg](https://gol.gg/): A valuable source of competitive League of Legends statistics and data, enabling us to gather insights into player and team performance.
+
+- [League of Legends Fandom](https://lol.fandom.com/): A community-driven platform that offers a wealth of information on League of Legends tournaments, players, and teams.
+
+- [OraclesElixir](https://oracleselixir.com/) 
+
+- [Factor.gg](https://factor.gg/)
+
+- [RIOT API](https://developer.riotgames.com/): The official API provided by Riot Games, enabling us to access essential League of Legends data and enrich our analyses.
+
+- [R Libraries](https://cran.r-project.org/): The vibrant R community and its extensive collection of libraries have empowered us to process, visualize, and analyze data effectively within ProLeagueVizz.
+
+We also express our appreciation to the countless League of Legends enthusiasts, developers, and contributors who have shared their insights, ideas, and knowledge, fostering a collaborative environment within the League of Legends community.
+
+Your collective efforts have been instrumental in shaping ProLeagueVizz and contributing to its capabilities. We are grateful for your support and dedication.
 
 ---
 
