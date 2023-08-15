@@ -6,24 +6,23 @@ An interactive Shiny app for analyzing professional League of Legends data. The 
 
 # Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
+- [Introduction](#introduction) 🌟
+- [Features](#features) ⚙️
   - [Player Statistics](#player-statistics)
   - [Team Statistics](#team-statistics)
   - [Team Comparison](#team-comparison)
-- [Technical Overview](#technical-overview)
+- [Technical Overview](#technical-overview) (Where the Magic Happens ✨🧠)
   - [Data Scraping and Gathering](#data-scraping-and-gathering)
   - [Data Processing and Analysis](#data-processing-and-analysis)
   - [Graphs and Content-Based Recommender System](#graphs-and-content-based-recommender-system)
   - [Scaling and Future Enhancements](#scaling-and-future-enhancements)
-- [Getting Started](#getting-started)
+- [Getting Started](#getting-started) 🛠️
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
+- [Usage](#usage) 📝
+- [Roadmap](#roadmap) 🗺️
+- [Contributing](#contributing) 🤝
+- [Acknowledgements](#acknowledgements)🙏
 
 ## Introduction
 
