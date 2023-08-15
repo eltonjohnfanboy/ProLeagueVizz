@@ -1,7 +1,7 @@
 # Define ui
 ui <- fluidPage(
                 useShinyjs(),
-                includeCSS("C:/Users/adars/OneDrive/Escritorio/ProjecteLolShiny/www/style.css"),
+                includeCSS("./www/style.css"),
                 theme = shinythemes::shinytheme("slate"),
                 navbarPage(
                   "LeagueStats",

@@ -16,7 +16,7 @@ library(shinyjs)
 library(DT)
 library(visNetwork)
 
-# Set the working directory
+# Set the working directory (CHANGE PATH)
 setwd("C:/Users/adars/OneDrive/Escritorio/ProjecteLolShiny")
 
 

@@ -352,7 +352,7 @@ server <- function(input, output, session){
   })
 
   output$playerImage <- renderImage({
-    image_directory <- "C:/Users/adars/OneDrive/Escritorio/ProjecteLolShiny/PlayerImages"
+    image_directory <- "./PlayerImages"
     img_path <- file.path(image_directory, paste0("image_", input$player, ".jpg"))
     list(src = img_path,
          alt = input$player,
