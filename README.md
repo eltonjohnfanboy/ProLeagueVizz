@@ -1,6 +1,6 @@
 # ProLeagueVizz
 
-![ProLeagueVizz Logo/Image](path/to/logo.png) <!-- If you have a logo or relevant image, include it here -->
+![ProLeagueVizz Logo/Image](www/lol_logo.png) <!-- If you have a logo or relevant image, include it here -->
 
 An interactive Shiny app for analyzing professional League of Legends data. The app is a work in progress and currently offers insights into player statistics for a subset of LEC players.
 
