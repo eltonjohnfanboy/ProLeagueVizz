@@ -104,6 +104,8 @@ As we continue to develop ProLeagueVizz, the Team Statistics and Team Comparison
 
 ## Getting Started
 
+Follow these steps to install and run ProLeagueVizz on your local machine:
+
 ## Prerequisites
 
 Before using the ProLeagueVizz app, ensure you have the following prerequisites in place:
