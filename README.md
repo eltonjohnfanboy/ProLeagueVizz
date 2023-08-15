@@ -42,9 +42,35 @@ In a rapidly evolving field where the potential for insights is vast and unchart
 
 ## Features
 
+## Features
+
 ### Player Statistics
 
-Explore detailed statistics for individual players, including performance metrics, achievements, and historical data. The player statistics section currently covers a subset of LEC players.
+In the **Player Statistics** section of ProLeagueVizz, you'll find a comprehensive collection of the most important statistics regarding a player's performance. The section allows you to navigate seamlessly between different tournaments from various years in which the player participated. Notably, you can gain insights into how the player's performance compares to others within the same event or tournament.
+
+#### Basic Player Details
+
+The section begins by presenting key player information, including their name, team, trajectory, and tournament results. This provides a solid foundation for understanding the player's context within the League of Legends competitive landscape.
+
+#### Early Game Performance
+
+Delve into the player's early game performance metrics. This includes crucial details such as their first blood statistics (both given and received), CS (Creep Score) difference, and more. The early game insights can be viewed in comparison to all players of the tournament or exclusively within the player's specific role or position.
+
+#### Aggression Analysis
+
+The **Aggression** subsection offers a deeper understanding of the player's aggression level. This aspect is pivotal in comprehending how much the player contributes to their team's damage, kills, assists, and overall impact. Furthermore, the analysis provides the player's KDA (Kill/Death/Assist ratio) and solo kills, offering valuable insights into their gameplay style. As with previous sections, these metrics can be examined in the context of all tournament players or exclusively within the player's role.
+
+#### Efficiency Evaluation
+
+Efficiency is a critical aspect of a player's performance. The **Efficiency** section provides key information on whether the player is able to achieve high performance while efficiently using resources. A player who can excel with minimal resources showcases adaptability and skill. This metric goes beyond the traditional performance indicators and provides a more holistic view of a player's capabilities.
+
+#### Champion Pool and Playstyle Analysis
+
+The **Champion Pool** subsection is dedicated to exploring the champions a player is proficient in. It offers insights into each champion's KDA, win rate, and more. The section also features a unique similarity graph, visually representing the relationship between the champions the player has used. This graph aids in identifying the player's playstyle, revealing patterns and potential preferences. The similarity graph is built on a content-based recommender system, and our goal is to continually enhance and refine this feature to provide even more accurate insights.
+
+![ProLeagueVizz Player Statistics](www/player_statistics.gif)
+
+The Player Statistics section of ProLeagueVizz empowers you to uncover hidden patterns, gain valuable insights, and better understand the performance of professional League of Legends players. It's not just about raw data; it's about deriving meaningful and actionable information that enhances your appreciation of the game.
 
 ### Team Statistics
 
