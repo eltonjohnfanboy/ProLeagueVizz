@@ -105,25 +105,15 @@ Understand the nuances of each team's playstyle, including their strategic prefe
 As we continue to develop ProLeagueVizz, the Team Statistics and Team Comparison sections will add new layers of insight and analysis to your understanding of professional League of Legends. Stay tuned for updates as we work to bring these features to life.
 
 ## Technical Overview
-
-[Provide a detailed technical explanation of the data scraping process, data processing, and the implementation of the content-based recommender system.]
-
+(IN PROGRESS)
 ### Data Scraping and Gathering
-
-[Explain how data is collected from various sources, including Gol.gg, OraclesElixir, League of Legends Fandom, and Factor.gg. Describe the use of Selenium for web scraping.]
-
+...
 ### Data Processing and Analysis
-
-[Detail the data processing steps, including cleaning, standardization, and aggregation. Mention the R libraries used for data transformation and analysis.]
-
+...
 ### Graphs and Content-Based Recommender System
-
-[Discuss the creation of the champion similarity graph, including how champion attributes are used to calculate similarity, the visualization with visNetwork, and the insights users can gain.]
-
+...
 ### Scaling and Future Enhancements
-
-[Share your plans for scaling ProLeagueVizz and enhancing its features in the future.]
-
+...
 ## Getting Started
 
 Follow these steps to install and run ProLeagueVizz on your local machine:
