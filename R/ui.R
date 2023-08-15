@@ -114,7 +114,6 @@ ui <- fluidPage(
                           )
                   ),
                   tabPanel("Team stats", "Under construction 👷"),
-                  tabPanel("Team comparison", "Under construction 👷"),
-                  tabPanel("Player similarity", "Under construction 👷")
+                  tabPanel("Team comparison", "Under construction 👷")
                 ) # navbar page
               ) #fluidpage
