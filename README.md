@@ -70,7 +70,7 @@ Efficiency is a critical aspect of a player's performance. The **Efficiency** se
 
 The **Champion Pool** subsection is dedicated to exploring the champions a player is proficient in. It offers insights into each champion's KDA, win rate, and more. The section also features a unique similarity graph, visually representing the relationship between the champions the player has used. This graph aids in identifying the player's playstyle, revealing patterns and potential preferences. The similarity graph is built on a content-based recommender system, and our goal is to continually enhance and refine this feature to provide even more accurate insights.
 
-![player_stats](www/player_stats.gif)
+![player_stats](https://github.com/eltonjohnfanboy/ProLeagueVizz/blob/main/www/player_stats.gif)
 
 The Player Statistics section of ProLeagueVizz empowers you to uncover hidden patterns, gain valuable insights, and better understand the performance of professional League of Legends players. It's not just about raw data; it's about deriving meaningful and actionable information that enhances your appreciation of the game.
 
