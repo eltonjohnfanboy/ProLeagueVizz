@@ -11,6 +11,11 @@ An interactive Shiny app for analyzing professional League of Legends data. The 
   - [Player Statistics](#player-statistics)
   - [Team Statistics](#team-statistics)
   - [Team Comparison](#team-comparison)
+- [Technical Overview](#technical-overview)
+  - [Data Scraping and Gathering](#data-scraping-and-gathering)
+  - [Data Processing and Analysis](#data-processing-and-analysis)
+  - [Graphs and Content-Based Recommender System](#graphs-and-content-based-recommender-system)
+  - [Scaling and Future Enhancements](#scaling-and-future-enhancements)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -39,8 +44,6 @@ The goal of ProLeagueVizz is to bridge this gap between raw data and meaningful 
 ![ProLeagueVizz Screenshot](www/captura_intro.png)
 
 In a rapidly evolving field where the potential for insights is vast and uncharted, ProLeagueVizz strives to be a valuable resource for both casual fans and serious analysts. We invite you to join us on this journey of discovery as we uncover the hidden stories within the data and contribute to the evolving narrative of professional League of Legends.
-
-## Features
 
 ## Features
 
@@ -101,6 +104,26 @@ Effortlessly compare the statistics, player performance, and playstyle tendencie
 Understand the nuances of each team's playstyle, including their strategic preferences, objective priorities, and map control. By comparing playstyles, you can gain insights into the strategic depth and decision-making of the teams.
 
 As we continue to develop ProLeagueVizz, the Team Statistics and Team Comparison sections will add new layers of insight and analysis to your understanding of professional League of Legends. Stay tuned for updates as we work to bring these features to life.
+
+## Technical Overview
+
+[Provide a detailed technical explanation of the data scraping process, data processing, and the implementation of the content-based recommender system.]
+
+### Data Scraping and Gathering
+
+[Explain how data is collected from various sources, including Gol.gg, OraclesElixir, League of Legends Fandom, and Factor.gg. Describe the use of Selenium for web scraping.]
+
+### Data Processing and Analysis
+
+[Detail the data processing steps, including cleaning, standardization, and aggregation. Mention the R libraries used for data transformation and analysis.]
+
+### Graphs and Content-Based Recommender System
+
+[Discuss the creation of the champion similarity graph, including how champion attributes are used to calculate similarity, the visualization with visNetwork, and the insights users can gain.]
+
+### Scaling and Future Enhancements
+
+[Share your plans for scaling ProLeagueVizz and enhancing its features in the future.]
 
 ## Getting Started
 
