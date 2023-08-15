@@ -68,23 +68,78 @@ Efficiency is a critical aspect of a player's performance. The **Efficiency** se
 
 The **Champion Pool** subsection is dedicated to exploring the champions a player is proficient in. It offers insights into each champion's KDA, win rate, and more. The section also features a unique similarity graph, visually representing the relationship between the champions the player has used. This graph aids in identifying the player's playstyle, revealing patterns and potential preferences. The similarity graph is built on a content-based recommender system, and our goal is to continually enhance and refine this feature to provide even more accurate insights.
 
-![ProLeagueVizz Player Statistics](www/player_statistics.gif)
+![player_stats](https://github.com/eltonjohnfanboy/ProjecteLolShiny/assets/103358618/8eb391c5-01a6-41bd-b12f-4df6443aac25)
 
 The Player Statistics section of ProLeagueVizz empowers you to uncover hidden patterns, gain valuable insights, and better understand the performance of professional League of Legends players. It's not just about raw data; it's about deriving meaningful and actionable information that enhances your appreciation of the game.
 
-### Team Statistics
+### Team Statistics (Work in Progress)
 
-[Describe the planned features and functionality of the team statistics section.]
+The **Team Statistics** section of ProLeagueVizz is an upcoming feature that aims to provide a comprehensive analysis of professional League of Legends teams. Although this section is currently under development, our vision is to offer a wealth of information about various pro teams, including player statistics, team synergy, and playstyle tendencies.
 
-### Team Comparison
+#### Team Overview
 
-[Describe the planned features and functionality of the team comparison section.]
+Gain insights into different professional teams, their key players, and their achievements. Dive into team-specific details and learn about their performance in various tournaments and events.
+
+#### Player Stats and Synergy
+
+Explore detailed statistics for individual players within a team and examine how they contribute to the team's overall performance. Understand the synergy between players based on their champion pools and performance metrics.
+
+#### Playstyle Tendencies
+
+Discover each team's unique playstyle tendencies, such as their approach to objectives like the first drake and Baron, as well as their preferred areas of action on the map. While certain data might not be readily available for free, our goal is to leverage fight tendencies of each player in soloQ to generate insightful information regarding team tendencies.
+
+### Team Comparison (Work in Progress)
+
+The **Team Comparison** section is a future addition to ProLeagueVizz that will enable users to compare different professional League of Legends teams. This powerful feature will allow you to gain a deeper understanding of how teams stack up against each other.
+
+#### Compare Teams and Players
+
+Effortlessly compare the statistics, player performance, and playstyle tendencies of two different teams. Identify strengths, weaknesses, and areas of differentiation that set each team apart.
+
+#### Analyze Playstyles
+
+Understand the nuances of each team's playstyle, including their strategic preferences, objective priorities, and map control. By comparing playstyles, you can gain insights into the strategic depth and decision-making of the teams.
+
+As we continue to develop ProLeagueVizz, the Team Statistics and Team Comparison sections will add new layers of insight and analysis to your understanding of professional League of Legends. Stay tuned for updates as we work to bring these features to life.
 
 ## Getting Started
 
-### Prerequisites
+Follow these steps to install and run ProLeagueVizz on your local machine:
 
-[List any prerequisites, software, or tools that users need to have before running the app.]
+## Prerequisites
+
+Before using the ProLeagueVizz app, ensure you have the following prerequisites in place:
+
+- **R Installation:** ProLeagueVizz is an R Shiny app. You need to have R installed on your system to run the app. You can either use R directly or opt for an integrated development environment (IDE) like RStudio or Visual Studio Code (VSCode) with R support.
+
+- **Required R Packages:** The following R packages are required for the proper functioning of ProLeagueVizz. You can install them using the R console or your preferred R package management method:
+
+    ```r
+    install.packages(c(
+      "shiny",
+      "shinythemes",
+      "reshape2",
+      "ggplot2",
+      "lubridate",
+      "dplyr",
+      "readr",
+      "plotly",
+      "bslib",
+      "forcats",
+      "ggridges",
+      "viridis",
+      "gridExtra",
+      "shinyjs",
+      "DT",
+      "visNetwork"
+    ))
+    ```
+
+   These packages provide essential functionalities for data manipulation, visualization, interactivity, and user interface design in ProLeagueVizz.
+
+We recommend using the latest versions of R and the specified packages to ensure compatibility and access to the app's full range of features.
+
+With these prerequisites met, you're ready to explore the insights and analyses that ProLeagueVizz has to offer.
 
 ### Installation
 
