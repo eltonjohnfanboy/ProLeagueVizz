@@ -1,6 +1,6 @@
 # Ignore data files
-data/*.csv
-data/*.json
+#data/*.csv
+#data/*.json
 
 # Ignore log files
 *.log
