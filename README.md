@@ -105,9 +105,35 @@ Understand the nuances of each team's playstyle, including their strategic prefe
 As we continue to develop ProLeagueVizz, the Team Statistics and Team Comparison sections will add new layers of insight and analysis to your understanding of professional League of Legends. Stay tuned for updates as we work to bring these features to life.
 
 ## Technical Overview
-(IN PROGRESS)
+
+## Technical Overview
+
 ### Data Scraping and Gathering
-...
+
+One of the fundamental pillars of the ProLeagueVizz project was the collection and aggregation of data that forms the foundation for our insights and visualizations. The data scraping process was a crucial step in obtaining the necessary information to showcase players' performance and trajectories. Using the Selenium software, we embarked on a journey to extract key data points that contribute to our app's analytical power.
+
+#### Scraping Player Information
+
+We began by gathering essential player information, painting a vivid picture of their careers. This encompassed details such as player names, affiliated teams, tournament trajectories, and results. Additionally, we collected player photos to provide a personal touch to our web app and offer insights into their competitive journey. The collected data underwent a rigorous cleaning process to ensure consistency and relevance. We tackled challenges like datetime formatting and symbol removal to transform raw data into structured and coherent information.
+
+To achieve this, we utilized Python notebooks dedicated to data scraping and cleaning. The code responsible for extracting player images, tournament details, and basic player data can be found in files like `scrapImages.ipynb`, `tournament_scrapping.ipynb`, and `PlayerStats_scrapping.ipynb`.
+
+#### Scrapping Tournament-Specific Technical Data
+
+Equipped with player profiles, we then embarked on the task of scraping tournament-specific technical data. This data was organized on a tournament and year basis, allowing users of the app to explore player performance with greater flexibility. By doing so, we empowered users to observe the evolution of players' gameplay, make year-to-year comparisons, and investigate their strengths and weaknesses.
+
+The data collection process involved accessing multiple sources, including platforms like gol.gg and OraclesElixir. Each source provided unique insights that, when combined, gave a comprehensive view of players' competitive achievements. Data formatting and standardization were critical steps in this process. We addressed issues like symbol removal, value range adjustment, and handling missing data to ensure accurate and coherent analyses within our R app.
+
+The code responsible for scraping player statistics and formatting data from various websites is contained in files such as `InitialTest_scrapping.ipynb`, `PlayerStats_scrapping.ipynb`, and `golData_indivStats.ipynb`.
+
+#### Overcoming Data Source Discrepancies (Highlight)
+
+One notable challenge we faced was the inconsistency in tournament names across different websites. For instance, one source might list an event as "Worlds 2020," while another could refer to it as "World Championship 2020." Similar variations occurred for other events, such as "MSI 2019" and "Mid-Season Invitational 2019." To address this issue, we employed the powerful FuzzyWuzzy library in Python. This library enabled us to intelligently match strings and establish correspondences between different tournament name variations. This strategy was instrumental in efficiently reconciling disparate tournament data, ultimately saving us valuable time.
+
+The code demonstrating our string matching strategy can be found in the file `dataMerge.ipynb`.
+
+The data scraping and aggregation process played a pivotal role in creating the robust dataset that powers ProLeagueVizz. By carefully collecting, cleaning, and standardizing data from various sources, we've laid the groundwork for insightful analyses and dynamic visualizations that empower users to explore the competitive world of League of Legends in depth.
+
 ### Data Processing and Analysis
 ...
 ### Graphs and Content-Based Recommender System
