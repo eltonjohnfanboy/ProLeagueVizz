@@ -12,10 +12,8 @@ An interactive Shiny app for analyzing professional League of Legends data. The 
   - [Team Statistics](#team-statistics)
   - [Team Comparison](#team-comparison)
 - [Technical Overview](#technical-overview) (Where the Magic Happens ✨🧠)
-  - [Data Scraping and Gathering](#data-scraping-and-gathering)
-  - [Data Processing and Analysis](#data-processing-and-analysis)
+  - [Data Scraping and Analysis](#data-scraping-and-analysis)
   - [Graphs and Content-Based Recommender System](#graphs-and-content-based-recommender-system)
-  - [Scaling and Future Enhancements](#scaling-and-future-enhancements)
 - [Getting Started](#getting-started) 🛠️
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -106,9 +104,7 @@ As we continue to develop ProLeagueVizz, the Team Statistics and Team Comparison
 
 ## Technical Overview
 
-## Technical Overview
-
-### Data Scraping and Gathering
+### Data Scraping and Analysis
 
 One of the fundamental pillars of the ProLeagueVizz project was the collection and aggregation of data that forms the foundation for our insights and visualizations. The data scraping process was a crucial step in obtaining the necessary information to showcase players' performance and trajectories. To do so we made use of the Selenium scrapping tool.
 
@@ -156,6 +152,8 @@ For instance, consider the scenario where we analyzed champion choices for Yasuo
 By incorporating this unique methodology, we were able to infuse our recommender system with a distinct human touch. The insights gained went beyond numerical patterns and tapped into the nuanced preferences and playstyles of high Elo players. 
 
 Our data collection process resulted in a robust dataset encompassing champion characteristics and usage patterns. Leveraging this dataset, we developed a recommendation matrix that quantified the similarity between champions based on the three collected datasets. Weighting was applied to reflect the varying importance of each attribute in determining champion relationships.
+
+The code can de found in the Data Preprocessing folder as `content_based_filtering.ipynb`
 
 #### The Interactive Graph Experience
 
