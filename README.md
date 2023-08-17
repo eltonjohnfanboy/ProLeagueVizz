@@ -110,36 +110,63 @@ As we continue to develop ProLeagueVizz, the Team Statistics and Team Comparison
 
 ### Data Scraping and Gathering
 
-One of the fundamental pillars of the ProLeagueVizz project was the collection and aggregation of data that forms the foundation for our insights and visualizations. The data scraping process was a crucial step in obtaining the necessary information to showcase players' performance and trajectories. Using the Selenium software, we embarked on a journey to extract key data points that contribute to our app's analytical power.
+One of the fundamental pillars of the ProLeagueVizz project was the collection and aggregation of data that forms the foundation for our insights and visualizations. The data scraping process was a crucial step in obtaining the necessary information to showcase players' performance and trajectories. To do so we made use of the Selenium scrapping tool.
 
 #### Scraping Player Information
 
-We began by gathering essential player information, painting a vivid picture of their careers. This encompassed details such as player names, affiliated teams, tournament trajectories, and results. Additionally, we collected player photos to provide a personal touch to our web app and offer insights into their competitive journey. The collected data underwent a rigorous cleaning process to ensure consistency and relevance. We tackled challenges like datetime formatting and symbol removal to transform raw data into structured and coherent information.
+We began by gathering essential player information. This encompassed details such as player names, affiliated teams, tournament trajectories, and results. Additionally, we collected player photos to provide a personal touch to our web app and also offer insights into their competitive journey. The collected data underwent a rigorous cleaning process to ensure consistency and relevance. We tackled challenges like datetime formatting and symbol removal to transform raw data into clean and functional data.
 
-To achieve this, we utilized Python notebooks dedicated to data scraping and cleaning. The code responsible for extracting player images, tournament details, and basic player data can be found in files like `scrapImages.ipynb`, `tournament_scrapping.ipynb`, and `PlayerStats_scrapping.ipynb`.
+To achieve this, we utilized Python notebooks dedicated to data scraping and cleaning. The code responsible for extracting player images, tournament details, and basic player data can be found in the files `scrapImages.ipynb`, `tournament_scrapping.ipynb`, and `PlayerStats_scrapping.ipynb`.
 
 #### Scrapping Tournament-Specific Technical Data
 
-Equipped with player profiles, we then embarked on the task of scraping tournament-specific technical data. This data was organized on a tournament and year basis, allowing users of the app to explore player performance with greater flexibility. By doing so, we empowered users to observe the evolution of players' gameplay, make year-to-year comparisons, and investigate their strengths and weaknesses.
+The next step wasa scraping tournament-specific technical data. This data was organized on a tournament and year basis, allowing users of the app to explore player performance with greater flexibility. By doing so, we gave users the ability to observe the evolution of players' gameplay, make year-to-year comparisons, and investigate their strengths and weaknesses.
 
-The data collection process involved accessing multiple sources, including platforms like gol.gg and OraclesElixir. Each source provided unique insights that, when combined, gave a comprehensive view of players' competitive achievements. Data formatting and standardization were critical steps in this process. We addressed issues like symbol removal, value range adjustment, and handling missing data to ensure accurate and coherent analyses within our R app.
+The data collection process involved accessing multiple sources, including platforms like gol.gg and OraclesElixir. Each source provided unique player stats and data that, when combined, gave a comprehensive and deep view of players' competitive achievements. Data formatting and standardization were critical steps in this process. We addressed issues like symbol removal, value range adjustment, and handling missing data to ensure accurate and coherent analyses within our R app.
 
 The code responsible for scraping player statistics and formatting data from various websites is contained in files such as `InitialTest_scrapping.ipynb`, `PlayerStats_scrapping.ipynb`, and `golData_indivStats.ipynb`.
 
-#### Overcoming Data Source Discrepancies (Highlight)
+#### Overcoming Data Source Discrepancies
 
-One notable challenge we faced was the inconsistency in tournament names across different websites. For instance, one source might list an event as "Worlds 2020," while another could refer to it as "World Championship 2020." Similar variations occurred for other events, such as "MSI 2019" and "Mid-Season Invitational 2019." To address this issue, we employed the powerful FuzzyWuzzy library in Python. This library enabled us to intelligently match strings and establish correspondences between different tournament name variations. This strategy was instrumental in efficiently reconciling disparate tournament data, ultimately saving us valuable time.
+One notable challenge we faced was the inconsistency in tournament names across different websites. For instance, one source might list an event as "Worlds 2020," while another could refer to it as "World Championship 2020." Similar variations occurred for other events, such as "MSI 2019" and "Mid-Season Invitational 2019." To address this issue, we made use of the FuzzyWuzzy library in Python. This library enabled us to intelligently match strings and establish correspondences between different tournament name variations. This strategy was instrumental in efficiently reconciling disparate tournament data, ultimately saving us valuable time.
+
+The alternative options to address this challenge would have been manual entry or laborious string modification. However, the string matching library FuzzyWuzzy provided a more automated and effective solution.
 
 The code demonstrating our string matching strategy can be found in the file `dataMerge.ipynb`.
 
-The data scraping and aggregation process played a pivotal role in creating the robust dataset that powers ProLeagueVizz. By carefully collecting, cleaning, and standardizing data from various sources, we've laid the groundwork for insightful analyses and dynamic visualizations that empower users to explore the competitive world of League of Legends in depth.
+#### Scraping Champion Pool Data
 
-### Data Processing and Analysis
-...
+The final piece of the puzzle was scraping champion pool data. We collected information on the champions that each player has historically played, both over their entire career and in specific tournaments. This data lets users to explore which champions players excelled with in particular events or throughout their careers.
+
+This data can be found in the file `playerGraphScrapping.ipynb`.
+
 ### Graphs and Content-Based Recommender System
-...
-### Scaling and Future Enhancements
-...
+
+During the development of ProLeagueVizz, we wanted to provide users with a tool that not only showcases player champion pools but also offers a glimpse into their playstyle and potential future champion selections. To achieve this, we made use of the power of recommender systems and translated its insights into an interactive graph using R's visNetwork library.
+
+#### The Power of Recommender Systems
+
+Our primary goal was to give users the ability to explore a player's champion pool and glean insights into their preferred playstyle and potential future champion choices. We achieved this through the concept of a recommender system. This system, often employed in various domains, helps identify similarities between items based on specific features, in this case, champion attributes and how much they are played in SoloQ. 
+
+#### Crafting the Recommender System
+
+To construct our content-based recommender system, we started by going through the data scraping process. We collected three distinct datasets: champion attributes such as their nature (e.g., brawler, assassin), in-game statistics (base damage, HP, AP, AD), and actual player usage data. The latter was extracted using the RIOT API, analyzing the champion choices of over 8,000 high Elo players.
+This last step was particularly insightful as we chose to analyze high Elo players, not just professional players, to achieve a more comprehensive perspective. In the quest to provide more human-like insights, we delved deeper into the data. For each champion, we examined the correlated champions that appeared as the second-most frequently played champions by players who favored the main champion. This analysis revealed fascinating correlations and player preferences that transcended statistical boundaries.
+For instance, consider the scenario where we analyzed champion choices for Yasuo. Surprisingly, we discovered a notable trend: a significant portion of Yasuo enthusiasts also favored Yone. This intriguing correlation sparks a fascinating realization – champions like Yasuo and Yone share a certain allure that resonates with players who enjoy high-intensity, high-mobility gameplay.
+By incorporating this unique methodology, we were able to infuse our recommender system with a distinct human touch. The insights gained went beyond numerical patterns and tapped into the nuanced preferences and playstyles of high Elo players. 
+
+Our data collection process resulted in a robust dataset encompassing champion characteristics and usage patterns. Leveraging this dataset, we developed a recommendation matrix that quantified the similarity between champions based on the three collected datasets. Weighting was applied to reflect the varying importance of each attribute in determining champion relationships.
+
+#### The Interactive Graph Experience
+
+Visualizing the recommendations was made possible through R's visNetwork library. We translated the recommendation matrix into an interactive graph where champions are represented as nodes, and edges reflect their similarity. Users exploring a player's champion pool can now not only view statistics and win rates but also witness the interconnectedness between champions.
+
+Intriguingly, as users explore the graph, they can identify clusters of champions with shared attributes and playstyles. Edges connecting these clusters offer insights into the potential expansion of a player's champion pool based on their existing preferences.
+
+#### Future Enrichments and Personalized Insights
+
+While our content-based recommender system provides valuable insights into champion relationships, we envision further enhancing its capabilities. Our next step involves incorporating personal data from pro players, such as their preferred playstyles and champions. By integrating these insights, we aim to create a more personalized recommendation experience using collaborative filtering approaches.
+
 ## Getting Started
 
 Follow these steps to install and run ProLeagueVizz on your local machine:
